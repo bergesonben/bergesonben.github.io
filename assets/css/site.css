@@ -44,10 +44,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 img { max-width: 100%; height: auto; display: block; }
 
-h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+h1, h2, h3 { margin: 0; font-weight: 800; letter-spacing: -0.03em; line-height: normal; }
 p { margin: 0; }
 
-.mono { font-family: var(--mono); }
+.mono { font-family: var(--mono); line-height: normal; }
 
 .skip-link {
   position: absolute; left: -9999px; top: 8px;
