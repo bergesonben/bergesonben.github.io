@@ -7,6 +7,8 @@ url: https://bitsofbenjamin.com
 baseurl: ""
 lang: en
 timezone: America/Denver
+# GitHub Pages applies jekyll-theme-primer unless the theme is explicitly unset.
+theme: null
 
 author:
   name: Benjamin Bergeson
