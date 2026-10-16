@@ -1,0 +1,21 @@
+{%- assign p = include.project -%}
+<article class="tile project{% if p.featured %} project-featured{% endif %}">
+  <div class="tile-top">
+    <span class="status status-{{ p.status }} mono">{{ p.status | upcase }}</span>
+    {%- if p.meta %}<span class="meta mono">{{ p.meta }}</span>{% endif %}
+  </div>
+  <h3>{{ p.name }}</h3>
+  <p>{{ p.description }}</p>
+  {%- if p.featured %}
+  <div class="spark" aria-hidden="true">
+    <svg viewBox="0 0 560 130" preserveAspectRatio="none">
+      <line x1="0" y1="32" x2="560" y2="32"/><line x1="0" y1="72" x2="560" y2="72"/><line x1="0" y1="112" x2="560" y2="112"/>
+      <polyline class="spark-a" points="0,18 70,26 140,30 210,44 280,50 350,58 420,70 490,76 560,88"/>
+      <polyline class="spark-b" points="0,40 70,46 140,52 210,62 280,66 350,78 420,86 490,96 560,104"/>
+    </svg>
+  </div>
+  {%- endif %}
+  {%- if p.url %}
+  <a class="tile-link" href="{{ p.url }}">Visit the site →</a>
+  {%- endif %}
+</article>

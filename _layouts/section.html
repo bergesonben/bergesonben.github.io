@@ -1,0 +1,30 @@
+---
+layout: default
+filterable: true
+---
+{%- assign sec = site.data.sections | where: "id", page.section | first -%}
+{%- assign posts = site.posts | where: "section", page.section -%}
+<section class="section section-page">
+  {% include section-head.html number=sec.number title=sec.title level="h1" %}
+  <p class="lede">{{ sec.blurb }}</p>
+  {%- if posts.size > 0 %}
+  {% include filters.html section=sec posts=posts %}
+  {%- if sec.card == "recipe" %}
+  <div class="tile recipe-list" data-filterable>
+    {%- for post in posts %}
+    {% include recipe-row.html post=post index=forloop.index %}
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <div class="grid-cards" data-filterable>
+    {%- for post in posts %}
+    {% include card.html post=post %}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+  <p class="empty" data-empty hidden>Nothing matches that filter yet.</p>
+  {%- else %}
+  <p class="empty">Nothing here yet. Check back soon.</p>
+  {%- endif %}
+  {{ content }}
+</section>

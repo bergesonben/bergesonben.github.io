@@ -1,0 +1,48 @@
+# The blog's sections. Every post's `section:` must be one of these ids.
+- id: tinkering
+  number: "01"
+  nav: tinkering
+  title: Things I tinker with
+  url: /tinkering/
+  blurb: Software, cars, and anything else that ends up on the workbench.
+  card: post
+  filters:
+    - key: tags
+      label: Topic
+
+- id: kitchen
+  number: "02"
+  nav: kitchen
+  title: The kitchen
+  url: /kitchen/
+  blurb: Recipes I actually cook, written the way I'd explain them at the stove.
+  card: recipe
+  filters:
+    - key: cuisine
+      label: Cuisine
+
+- id: eating-out
+  number: "03"
+  nav: eating out
+  title: Eating out
+  url: /eating-out/
+  blurb: Where I'd send a friend, at home in Utah or on the road. Trips show up here as places.
+  card: restaurant
+  filters:
+    - key: place
+      label: Place
+    - key: cuisine
+      label: Cuisine
+    - key: price
+      label: Price
+
+- id: reading
+  number: "05"
+  nav: reading
+  title: Reading notes
+  url: /reading/
+  blurb: Notes on books and podcasts, usually two at once.
+  card: post
+  filters:
+    - key: tags
+      label: Topic

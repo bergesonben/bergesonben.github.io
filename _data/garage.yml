@@ -1,0 +1,13 @@
+# The garage tile. `tag` links to the tinkering posts with that tag.
+- year: 2022
+  name: BMW M850i
+  role: the grand tourer
+  tag: m850i
+- year: 2009
+  name: Toyota FJ Cruiser, Voodoo Blue
+  role: winter, dirt, Vegas runs
+  tag: fj-cruiser
+- year: 1985
+  name: Mercedes 300CD
+  role: the forever project
+  tag: 300cd

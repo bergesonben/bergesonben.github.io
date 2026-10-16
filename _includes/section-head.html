@@ -1,0 +1,11 @@
+{%- comment -%} Params: number, title, url (optional), link_text (optional), level (h1|h2, default h2) {%- endcomment -%}
+{%- assign tag = include.level | default: "h2" -%}
+<div class="section-head">
+  <div class="section-title">
+    <span class="num mono">{{ include.number }}</span>
+    <{{ tag }}>{{ include.title }}</{{ tag }}>
+  </div>
+  {%- if include.url %}
+  <a class="more mono" href="{{ include.url | relative_url }}">{{ include.link_text | default: "all →" }}</a>
+  {%- endif %}
+</div>

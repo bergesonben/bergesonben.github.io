@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="footer-about">
+    <div class="footer-title">{{ site.title }}</div>
+    <p>Made by Benjamin Bergeson — yes, it's spelled like that. Static, hand-rolled, hosted on GitHub Pages.</p>
+  </div>
+  <div class="footer-links mono">
+    {%- if site.author.email %}
+    <a href="mailto:{{ site.author.email }}">email</a>
+    {%- endif %}
+    {%- if site.author.github %}
+    <a href="https://github.com/{{ site.author.github }}">github</a>
+    {%- endif %}
+    <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+  </div>
+</footer>

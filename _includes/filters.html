@@ -1,0 +1,21 @@
+{%- comment -%}
+Filter chips for a section page, built from the values its posts actually use.
+Hidden until assets/js/filters.js runs, so the page still works without JavaScript.
+Params: section, posts
+{%- endcomment -%}
+{%- if include.section.filters and include.posts.size > 0 %}
+<div class="filters" data-filters hidden>
+  {%- for f in include.section.filters %}
+  {%- assign raw = include.posts | map: f.key | join: "|" | split: "|" | uniq | sort -%}
+  {%- if raw.size > 0 %}
+  <div class="filter-group" role="group" aria-label="Filter by {{ f.label | downcase }}" data-filter-group="{{ f.key }}">
+    <span class="filter-label mono">{{ f.label }}</span>
+    <button type="button" class="chip mono" data-value="" aria-pressed="true">All</button>
+    {%- for v in raw %}{% if v != "" %}
+    <button type="button" class="chip mono" data-value="{{ v | escape }}" aria-pressed="false">{{ v }}</button>
+    {%- endif %}{% endfor %}
+  </div>
+  {%- endif %}
+  {%- endfor %}
+</div>
+{%- endif %}

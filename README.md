@@ -1,0 +1,58 @@
+# bits of benjamin
+
+Source for [bitsofbenjamin.com](https://bitsofbenjamin.com): a hand-rolled Jekyll site, built and hosted by GitHub Pages straight from `main`. No theme, no build workflow, one stylesheet.
+
+## Writing a post
+
+Every post lives in `_posts/` as `YYYY-MM-DD-some-title.md` and belongs to one section. Unfinished posts go in `_drafts/` (no date in the filename) and don't publish until you move them.
+
+```yaml
+---
+title: The FJ cowl panel that left on the freeway
+section: tinkering        # tinkering | kitchen | eating-out | reading
+tags: [fj-cruiser, paint] # optional
+summary: One line, shown on cards.
+image: /assets/img/posts/fj-cowl.jpg   # optional cover photo
+image_alt: The repainted cowl panel next to the windshield
+---
+```
+
+Extra fields by section:
+
+| section | fields | notes |
+|---|---|---|
+| `tinkering` | `tags` | Car posts get a car tag (`fj-cruiser`, `300cd`, `m850i`) so the Garage tile links to them. |
+| `kitchen` | `cuisine`, `time_minutes`, `serves` | `cuisine` drives the kitchen filter. |
+| `eating-out` | `place`, `cuisine`, `price`, `verdict` | `price` is `$` to `$$$$`. Keep `place` spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
+| `reading` | `tags` | |
+
+Filter chips on each section page are generated from the values your posts use, so a new cuisine or place shows up automatically. Filters also work from the URL: `/eating-out/?place=Taipei`, `/tinkering/?tags=fj-cruiser`.
+
+## Editing the homepage
+
+Most homepage content is in `_data/`, not HTML:
+
+- `now.yml`: the Now card. Bump `updated` when you change it.
+- `projects.yml`: project tiles. `status` is `live` or `tinkering`; one can be `featured`.
+- `garage.yml`: the cars and the tag each one links to.
+- `nightstand.yml`: the reading tile.
+- `sections.yml`: section names, numbers, blurbs and which filters each one has.
+
+The hero copy is in the front matter of `index.html`. Colors and fonts are CSS variables at the top of `assets/css/site.css`.
+
+## Running it locally
+
+```sh
+bundle install
+bundle exec jekyll serve --drafts
+```
+
+Then open http://localhost:4000. `--drafts` shows drafts as if they were published.
+
+## Hosting
+
+GitHub Pages builds the site from `main` (Settings → Pages → Deploy from a branch → `main` / root). The custom domain comes from `CNAME`.
+
+## Before launch
+
+Delete the four `_posts/2026-10-16-sample-*.md` posts once real ones exist.

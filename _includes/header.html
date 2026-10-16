@@ -1,0 +1,10 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">{% include logo.html %}<span>{{ site.title }}</span></a>
+  <nav class="site-nav" aria-label="Main">
+    {%- for s in site.data.sections %}
+    <a href="{{ s.url | relative_url }}"{% if page.url == s.url or page.section == s.id %} aria-current="page"{% endif %}>{{ s.nav }}</a>
+    {%- endfor %}
+    <a href="{{ '/#garage' | relative_url }}">garage</a>
+    <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>about</a>
+  </nav>
+</header>

@@ -1,0 +1,9 @@
+{%- comment -%} Picks the right card for a post's section. Params: post, index, show_section {%- endcomment -%}
+{%- assign c_sec = site.data.sections | where: "id", include.post.section | first -%}
+{%- if c_sec.card == "restaurant" -%}
+{% include restaurant-card.html post=include.post %}
+{%- elsif c_sec.card == "recipe" and include.show_section == nil -%}
+{% include recipe-row.html post=include.post index=include.index %}
+{%- else -%}
+{% include post-card.html post=include.post show_section=include.show_section %}
+{%- endif -%}

@@ -1,0 +1,24 @@
+# Project tiles on the homepage. status: live | tinkering
+# One project can be `featured: true` (the big tile with the value-over-time line).
+- name: shitboxsupreme.com
+  url: https://shitboxsupreme.com
+  status: live
+  featured: true
+  meta: web app · MCP server next
+  description: >-
+    The logbook for the family fleet: mileage, service history, parts, costs,
+    and KBB trade-in and private-party values tracked over time.
+
+- name: Lightning Watcher
+  status: tinkering
+  meta: email-triggered
+  description: >-
+    Reads KSL Cars alerts, works out standard vs. extended-range battery,
+    ranks the price, and emails me the verdict.
+
+- name: Pocket assistant
+  status: tinkering
+  meta: self-hosted · Signal
+  description: >-
+    A personal AI I can text from anywhere. Read-only on email and calendar,
+    safety first.

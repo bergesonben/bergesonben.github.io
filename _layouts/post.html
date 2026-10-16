@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{%- assign sec = site.data.sections | where: "id", page.section | first -%}
+<article class="post">
+  <header class="post-header">
+    {%- if sec %}
+    <a class="post-section mono" href="{{ sec.url | relative_url }}">{{ sec.number }} · {{ sec.title }}</a>
+    {%- endif %}
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta mono">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+    {%- if page.section == "eating-out" %}
+    <dl class="fact-strip">
+      {%- if page.place %}<div><dt class="mono">Place</dt><dd>{{ page.place }}</dd></div>{% endif %}
+      {%- if page.cuisine %}<div><dt class="mono">Cuisine</dt><dd>{{ page.cuisine }}</dd></div>{% endif %}
+      {%- if page.price %}<div><dt class="mono">Price</dt><dd>{{ page.price }}</dd></div>{% endif %}
+      {%- if page.verdict %}<div class="fact-wide"><dt class="mono">Verdict</dt><dd>{{ page.verdict }}</dd></div>{% endif %}
+    </dl>
+    {%- elsif page.section == "kitchen" %}
+    <dl class="fact-strip">
+      {%- if page.cuisine %}<div><dt class="mono">Cuisine</dt><dd>{{ page.cuisine }}</dd></div>{% endif %}
+      {%- if page.time_minutes %}<div><dt class="mono">Time</dt><dd>{{ page.time_minutes }} min</dd></div>{% endif %}
+      {%- if page.serves %}<div><dt class="mono">Serves</dt><dd>{{ page.serves }}</dd></div>{% endif %}
+    </dl>
+    {%- endif %}
+  </header>
+  {%- if page.image %}
+  <img class="post-img" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}">
+  {%- endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+  <footer class="post-footer">
+    {%- if page.tags.size > 0 and sec %}
+    <div class="tags">
+      {%- for t in page.tags %}
+      <a class="tag mono" href="{{ sec.url | relative_url }}?tags={{ t | url_encode }}">{{ t }}</a>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+    {%- if sec %}
+    <a class="mono back" href="{{ sec.url | relative_url }}">← more {{ sec.nav }}</a>
+    {%- endif %}
+  </footer>
+</article>

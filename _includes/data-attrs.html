@@ -1,0 +1,1 @@
+{%- assign d = include.post -%} data-item data-tags="{{ d.tags | join: '|' | escape }}" data-place="{{ d.place | escape }}" data-cuisine="{{ d.cuisine | escape }}" data-price="{{ d.price | escape }}"

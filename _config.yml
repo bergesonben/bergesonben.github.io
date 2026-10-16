@@ -1,0 +1,40 @@
+title: bits of benjamin
+tagline: Tinkering on code, cars, and dinner.
+description: >-
+  Benjamin Bergeson's corner of the internet: side projects, driveway repairs,
+  recipes, restaurant notes, and whatever is on the nightstand.
+url: https://bitsofbenjamin.com
+baseurl: ""
+lang: en
+timezone: America/Denver
+
+author:
+  name: Benjamin Bergeson
+  github: bergesonben
+  # email: you@example.com   # uncomment to show an email link in the footer
+
+permalink: /:year/:month/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle

@@ -1,0 +1,145 @@
+---
+layout: default
+---
+{%- assign tinkering = site.posts | where: "section", "tinkering" -%}
+{%- assign kitchen = site.posts | where: "section", "kitchen" -%}
+{%- assign eating = site.posts | where: "section", "eating-out" -%}
+{%- assign reading = site.posts | where: "section", "reading" -%}
+{%- assign s_tinker = site.data.sections | where: "id", "tinkering" | first -%}
+{%- assign s_kitchen = site.data.sections | where: "id", "kitchen" | first -%}
+{%- assign s_eating = site.data.sections | where: "id", "eating-out" | first -%}
+{%- assign s_reading = site.data.sections | where: "id", "reading" | first -%}
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="kicker mono">{{ page.kicker }}</div>
+    <h1>{{ page.headline }}</h1>
+    <p class="hero-intro">{{ page.intro }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#tinkering">See what I'm tinkering on</a>
+      <a class="btn btn-ghost" href="#kitchen">Get hungry</a>
+    </div>
+  </div>
+  <aside class="tile now" aria-label="What I'm up to now">
+    <div class="now-head mono"><span class="dot" aria-hidden="true"></span>NOW · {{ site.data.now.updated | date: "%b %Y" | upcase }}</div>
+    {%- for g in site.data.now.groups %}
+    <div class="now-group">
+      <div class="now-label mono">{{ g.label | upcase }}</div>
+      {%- for item in g.items %}
+      <div class="now-item">{{ item }}</div>
+      {%- endfor %}
+    </div>
+    {%- endfor %}
+    <div class="now-updated mono">updated {{ site.data.now.updated | date: "%b %-d, %Y" }}</div>
+  </aside>
+</section>
+
+{%- if site.posts.size > 0 %}
+<section class="section" aria-labelledby="latest-heading">
+  <div class="section-head">
+    <div class="section-title"><h2 id="latest-heading" class="h-small">Latest</h2></div>
+    <a class="more mono" href="{{ '/feed.xml' | relative_url }}">rss →</a>
+  </div>
+  <div class="grid-cards">
+    {%- for post in site.posts limit: 4 %}
+    {% include card.html post=post show_section=true %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+<section id="tinkering" class="section">
+  {% include section-head.html number=s_tinker.number title=s_tinker.title url=s_tinker.url link_text="everything →" %}
+  <div class="row">
+    {%- assign featured = site.data.projects | where_exp: "p", "p.featured == true" | first -%}
+    {%- if featured %}{% include project-tile.html project=featured %}{% endif %}
+    <div class="stack">
+      {%- for p in site.data.projects %}{% unless p.featured %}
+      {% include project-tile.html project=p %}
+      {%- endunless %}{% endfor %}
+    </div>
+  </div>
+  {%- if tinkering.size > 0 %}
+  <div class="grid-cards">
+    {%- for post in tinkering limit: 3 %}
+    {% include post-card.html post=post %}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+  {%- if page.next_bit %}
+  <div class="next-bit">
+    <div><strong>Next bit:</strong> {{ page.next_bit }}</div>
+    <span class="meta mono">jekyll · github pages</span>
+  </div>
+  {%- endif %}
+</section>
+
+<section id="kitchen" class="section kitchen">
+  <div class="kitchen-intro">
+    {% include section-head.html number=s_kitchen.number title=s_kitchen.title %}
+    <p class="lede">{{ s_kitchen.blurb }}</p>
+  </div>
+  <div class="tile recipe-list">
+    {%- for post in kitchen limit: 3 %}
+    {% include recipe-row.html post=post index=forloop.index %}
+    {%- else %}
+    <p class="empty">The recipe box is being filled. Check back soon.</p>
+    {%- endfor %}
+    <a class="more mono" href="{{ s_kitchen.url | relative_url }}">the whole recipe box →</a>
+  </div>
+</section>
+
+<section id="eating-out" class="section">
+  {% include section-head.html number=s_eating.number title=s_eating.title url=s_eating.url link_text="every place →" %}
+  <p class="lede">{{ s_eating.blurb }}</p>
+  {%- if eating.size > 0 %}
+  <div class="grid-cards">
+    {%- for post in eating limit: 3 %}
+    {% include restaurant-card.html post=post %}
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <p class="empty">First write-ups coming soon.</p>
+  {%- endif %}
+</section>
+
+<section class="section row">
+  <div id="garage" class="tile tile-raised garage">
+    {% include section-head.html number="04" title="The garage" %}
+    <p>Everything here gets tinkered on in my own driveway. The running costs live on shitboxsupreme.</p>
+    <ul class="car-list">
+      {%- for car in site.data.garage %}
+      <li>
+        <span class="car-year mono">{{ car.year }}</span>
+        <a class="car-name" href="{{ s_tinker.url | relative_url }}?tags={{ car.tag | url_encode }}">{{ car.name }}</a>
+        <span class="car-role">{{ car.role }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    <a class="tile-link" href="https://shitboxsupreme.com">Service logs →</a>
+  </div>
+  <div id="reading" class="tile nightstand">
+    {% include section-head.html number=s_reading.number title="On the nightstand" %}
+    <p>{{ site.data.nightstand.blurb }}</p>
+    <div class="tracks">
+      <div class="track">
+        <div class="track-label mono">SLOW TRACK</div>
+        {%- for b in site.data.nightstand.slow_track %}
+        <div class="book"><div class="book-title">{{ b.title }}</div><div class="book-by">{{ b.by }}</div></div>
+        {%- endfor %}
+      </div>
+      <div class="track">
+        <div class="track-label mono">MAIN TRACK</div>
+        {%- for b in site.data.nightstand.main_track %}
+        <div class="book"><div class="book-title">{{ b.title }}</div><div class="book-by">{{ b.by }}</div></div>
+        {%- endfor %}
+      </div>
+    </div>
+    {%- if site.data.nightstand.someday %}
+    <div class="someday"><strong>Someday:</strong> {{ site.data.nightstand.someday }}</div>
+    {%- endif %}
+    {%- if reading.size > 0 %}
+    <a class="tile-link" href="{{ s_reading.url | relative_url }}">Reading notes →</a>
+    {%- endif %}
+  </div>
+</section>
