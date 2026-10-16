@@ -35,7 +35,7 @@ Most homepage content is in `_data/`, not HTML:
 - `now.yml`: the Now card. Bump `updated` when you change it.
 - `projects.yml`: project tiles. `status` is `live` or `tinkering`; one can be `featured`.
 - `garage.yml`: the cars and the tag each one links to.
-- `nightstand.yml`: the reading tile.
+- `bookshelf.yml`: the reading tile.
 - `sections.yml`: section names, numbers, blurbs and which filters each one has.
 
 The hero copy is in the front matter of `index.html`. Colors and fonts are CSS variables at the top of `assets/css/site.css`.
