@@ -42,6 +42,8 @@ The hero copy is in the front matter of `index.html`. Colors and fonts are CSS v
 
 ## Running it locally
 
+Needs Ruby and Bundler. If `bundle` isn't found, install it with `gem install --user-install bundler` and add its bin directory (`ruby -e 'print Gem.user_dir'` + `/bin`) to your `PATH`.
+
 ```sh
 bundle install
 bundle exec jekyll serve --drafts
