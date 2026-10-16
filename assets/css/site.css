@@ -184,10 +184,10 @@ a.tag:hover { color: var(--text); }
 .recipe-row:hover .recipe-name { color: var(--accent); }
 .recipe-meta { font-size: 13px; color: var(--food); }
 
-/* Garage + nightstand */
-.garage, .nightstand { flex: 1 1 460px; padding: 32px; display: flex; flex-direction: column; gap: 20px; }
-.garage .section-title h2, .nightstand .section-title h2 { font-size: 36px; }
-.garage p, .nightstand p { color: var(--text-2); }
+/* Garage + bookshelf */
+.garage, .bookshelf { flex: 1 1 460px; padding: 32px; display: flex; flex-direction: column; gap: 20px; }
+.garage .section-title h2, .bookshelf .section-title h2 { font-size: 36px; }
+.garage p, .bookshelf p { color: var(--text-2); }
 .car-list { list-style: none; margin: 0; padding: 0; }
 .car-list li {
   display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px;
@@ -261,7 +261,7 @@ a.tag:hover { color: var(--text); }
 
 @media (max-width: 600px) {
   .section-title h1, .section-title h2 { font-size: 32px; }
-  .tile:not(.card), .garage, .nightstand { padding: 22px; }
+  .tile:not(.card), .garage, .bookshelf { padding: 22px; }
   .recipe-list { padding: 4px 22px; }
   .card-body { padding: 18px 20px 20px; }
 }

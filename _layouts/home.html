@@ -118,25 +118,25 @@ layout: default
     </ul>
     <a class="tile-link" href="https://shitboxsupreme.com">Service logs →</a>
   </div>
-  <div id="reading" class="tile nightstand">
-    {% include section-head.html number=s_reading.number title="On the nightstand" %}
-    <p>{{ site.data.nightstand.blurb }}</p>
+  <div id="reading" class="tile bookshelf">
+    {% include section-head.html number=s_reading.number title="On the bookshelf" %}
+    <p>{{ site.data.bookshelf.blurb }}</p>
     <div class="tracks">
       <div class="track">
         <div class="track-label mono">SLOW TRACK</div>
-        {%- for b in site.data.nightstand.slow_track %}
+        {%- for b in site.data.bookshelf.slow_track %}
         <div class="book"><div class="book-title">{{ b.title }}</div><div class="book-by">{{ b.by }}</div></div>
         {%- endfor %}
       </div>
       <div class="track">
         <div class="track-label mono">MAIN TRACK</div>
-        {%- for b in site.data.nightstand.main_track %}
+        {%- for b in site.data.bookshelf.main_track %}
         <div class="book"><div class="book-title">{{ b.title }}</div><div class="book-by">{{ b.by }}</div></div>
         {%- endfor %}
       </div>
     </div>
-    {%- if site.data.nightstand.someday %}
-    <div class="someday"><strong>Someday:</strong> {{ site.data.nightstand.someday }}</div>
+    {%- if site.data.bookshelf.someday %}
+    <div class="someday"><strong>Someday:</strong> {{ site.data.bookshelf.someday }}</div>
     {%- endif %}
     {%- if reading.size > 0 %}
     <a class="tile-link" href="{{ s_reading.url | relative_url }}">Reading notes →</a>
