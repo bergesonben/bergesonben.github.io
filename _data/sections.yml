@@ -15,7 +15,7 @@
   nav: kitchen
   title: The kitchen
   url: /kitchen/
-  blurb: Recipes I actually cook, written the way I like it. 
+  blurb: Recipes I actually cook, written the way I like them. 
   card: recipe
   filters:
     - key: cuisine
