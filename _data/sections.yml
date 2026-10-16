@@ -15,7 +15,7 @@
   nav: kitchen
   title: The kitchen
   url: /kitchen/
-  blurb: Recipes I actually cook, written the way I'd explain them at the stove.
+  blurb: Recipes I actually cook, written the way I like it. 
   card: recipe
   filters:
     - key: cuisine
@@ -26,7 +26,7 @@
   nav: eating out
   title: Eating out
   url: /eating-out/
-  blurb: Where I'd send a friend, at home in Utah or on the road. Trips show up here as places.
+  blurb: Where I'd recommend spending money for nourishment, primarily in Utah. 
   card: restaurant
   filters:
     - key: place

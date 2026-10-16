@@ -1,24 +1,32 @@
-# Project tiles on the homepage. status: live | tinkering
-# One project can be `featured: true` (the big tile with the value-over-time line).
+# Project tiles on the homepage, shown in the order listed. Fields:
+#   name         required. Tile heading.
+#   description  required. Paragraph under the heading.
+#   status       required. live (blue pill) | tinkering (amber pill). Other values
+#                show as an unstyled pill.
+#   meta         optional. Small mono text at the top right of the tile.
+#   url          optional. Adds a "Visit the site →" link.
+#   featured     optional. true makes it the big left-hand tile with the line chart.
+# Only the first `featured: true` project is shown as the big tile; any other featured
+# entries are hidden. The chart is decorative (hardcoded in project-tile.html), not data.
+# Other fields are ignored.
 - name: shitboxsupreme.com
   url: https://shitboxsupreme.com
   status: live
   featured: true
   meta: web app · MCP server next
   description: >-
-    The logbook for the family fleet: mileage, service history, parts, costs,
+    The logbook for the vehicle fleet: mileage, service history, parts, costs,
     and KBB trade-in and private-party values tracked over time.
 
-- name: Lightning Watcher
-  status: tinkering
-  meta: email-triggered
+- name: EveryPark SLC
+  url: https://everyparkslc.com
+  status: live
+  meta: static site
   description: >-
-    Reads KSL Cars alerts, works out standard vs. extended-range battery,
-    ranks the price, and emails me the verdict.
+    An interactive map of all 489 parks across Salt Lake County — built as a static site on GitHub Pages. Data originally sourced from [City Cast Salt Lake](https://saltlake.citycast.fm).
 
-- name: Pocket assistant
+- name: 1985 Mercedes-Benz 300CD
   status: tinkering
-  meta: self-hosted · Signal
+  meta: diesel
   description: >-
-    A personal AI I can text from anywhere. Read-only on email and calendar,
-    safety first.
+    Simultaneously indestructible and always needing something. Long list of deferred maintenance I need to catch up on. Currently leaking water from the windshield into the cabin 😬
