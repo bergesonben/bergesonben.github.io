@@ -230,6 +230,8 @@ a.tag:hover { color: var(--text); }
 .fact-wide { flex-basis: 100%; }
 .fact-wide dd { font-weight: 400; color: var(--text-2); }
 .post-img { border-radius: 14px; margin-bottom: 32px; }
+.prose::after { content: ""; display: table; clear: both; }
+.prose .page-portrait { float: right; width: 200px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; margin: 6px 0 16px 28px; }
 .post-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; }
 .post-footer .tags { margin: 0; padding: 0; }
 .back { font-size: 14px; padding: 12px 0; }
@@ -260,6 +262,7 @@ a.tag:hover { color: var(--text); }
 .footer-links a { padding: 12px 0; }
 
 @media (max-width: 600px) {
+  .prose .page-portrait { float: none; width: 160px; margin: 0 0 20px; }
   .section-title h1, .section-title h2 { font-size: 32px; }
   .tile:not(.card), .garage, .bookshelf { padding: 22px; }
   .recipe-list { padding: 4px 22px; }
