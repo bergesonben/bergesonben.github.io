@@ -15,7 +15,7 @@
   featured: true
   meta: web app · MCP server next
   description: >-
-    The logbook for the vehicle fleet: mileage, service history, parts, costs,
+    The catchall site for my vehicle fleet: mileage, service history, parts, costs,
     and KBB trade-in and private-party values tracked over time.
 
 - name: EveryPark SLC
@@ -23,7 +23,7 @@
   status: live
   meta: static site
   description: >-
-    An interactive map of all 489 parks across Salt Lake County — built as a static site on GitHub Pages. Data originally sourced from <a href="https://saltlake.citycast.fm">City Cast Salt Lake</a>.
+    An interactive map of all 489 parks across Salt Lake County, built as a static site on GitHub Pages. Data originally sourced from <a href="https://saltlake.citycast.fm">City Cast Salt Lake</a>.\
 
 - name: 1985 Mercedes-Benz 300CD
   status: tinkering
