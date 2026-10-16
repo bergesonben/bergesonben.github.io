@@ -38,3 +38,4 @@ exclude:
   - Gemfile.lock
   - vendor
   - .bundle
+  - node_modules
