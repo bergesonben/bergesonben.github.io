@@ -40,7 +40,7 @@ layout: default
     <div class="section-title"><h2 id="latest-heading" class="h-small">Latest</h2></div>
     <a class="more mono" href="{{ '/feed.xml' | relative_url }}">rss →</a>
   </div>
-  <div class="grid-cards">
+  <div class="grid-cards grid-latest">
     {%- for post in site.posts limit: 4 %}
     {% include card.html post=post show_section=true %}
     {%- endfor %}

@@ -151,6 +151,7 @@ p { margin: 0; }
 
 /* Post cards */
 .grid-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: var(--gap); }
+.grid-latest { grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); }
 .card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
 .card[hidden] { display: none; }
 .card-img { width: 100%; height: 200px; object-fit: cover; }
