@@ -260,7 +260,7 @@ a.tag:hover { color: var(--text); }
 
 @media (max-width: 600px) {
   .section-title h1, .section-title h2 { font-size: 32px; }
-  .tile, .garage, .nightstand { padding: 22px; }
+  .tile:not(.card), .garage, .nightstand { padding: 22px; }
   .recipe-list { padding: 4px 22px; }
   .card-body { padding: 18px 20px 20px; }
 }
