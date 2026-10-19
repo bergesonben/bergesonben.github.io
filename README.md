@@ -57,4 +57,4 @@ GitHub Pages builds the site from `main` (Settings → Pages → Deploy from a b
 
 ## Before launch
 
-Delete the four `_posts/2026-10-16-sample-*.md` posts once real ones exist.
+Delete the three `_posts/2025-10-16-sample-*.md` posts once real ones exist.

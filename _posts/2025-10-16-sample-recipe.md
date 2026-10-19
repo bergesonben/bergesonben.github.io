@@ -8,7 +8,7 @@ summary: A placeholder that shows how recipes look. Delete it once a real one is
 sample: true
 ---
 
-This is a **sample recipe**, here so the kitchen has something in it. Delete this file (`_posts/2026-10-16-sample-recipe.md`) once you've moved your first real recipe over.
+This is a **sample recipe**, here so the kitchen has something in it. Delete this file (`_posts/2025-10-16-sample-recipe.md`) once you've moved your first real recipe over.
 
 ## Ingredients
 
