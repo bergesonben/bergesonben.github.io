@@ -23,5 +23,9 @@
     {% include footer.html %}
   </div>
   {% if layout.filterable %}<script src="{{ '/assets/js/filters.js' | relative_url }}" defer></script>{% endif %}
+  {% if jekyll.environment == "production" %}
+  <script data-goatcounter="https://bitsofbenjamin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  {% endif %}
 </body>
 </html>
