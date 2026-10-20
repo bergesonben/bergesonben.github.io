@@ -229,7 +229,8 @@ a.tag:hover { color: var(--text); }
 .fact-strip dd { margin: 2px 0 0; font-weight: 600; }
 .fact-wide { flex-basis: 100%; }
 .fact-wide dd { font-weight: 400; color: var(--text-2); }
-.post-img { border-radius: 14px; margin-bottom: 32px; }
+.menu-ratings { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.menu-stars { color: var(--text); margin-right: 6px; }
 .prose::after { content: ""; display: table; clear: both; }
 .prose .page-portrait { float: right; width: 200px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; margin: 6px 0 16px 28px; }
 .post-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; }

@@ -16,7 +16,17 @@ layout: default
       {%- if page.place %}<div><dt class="mono">Place</dt><dd>{{ page.place }}</dd></div>{% endif %}
       {%- if page.cuisine %}<div><dt class="mono">Cuisine</dt><dd>{{ page.cuisine }}</dd></div>{% endif %}
       {%- if page.price %}<div><dt class="mono">Price</dt><dd>{{ page.price }}</dd></div>{% endif %}
+      {%- if page.website %}<div><dt class="mono">Website</dt><dd><a href="{{ page.website }}">{{ page.website | remove: "https://" | remove: "http://" | remove: "www." | split: "/" | first }}</a></dd></div>{% endif %}
       {%- if page.verdict %}<div class="fact-wide"><dt class="mono">Verdict</dt><dd>{{ page.verdict }}</dd></div>{% endif %}
+      {%- if page.menu %}
+      <div class="fact-wide"><dt class="mono">Menu</dt><dd>
+        <ul class="menu-ratings">
+          {%- for m in page.menu %}
+          <li><span class="menu-stars">{{ m.rating }}</span> {{ m.item }}</li>
+          {%- endfor %}
+        </ul>
+      </dd></div>
+      {%- endif %}
     </dl>
     {%- elsif page.section == "kitchen" %}
     <dl class="fact-strip">
@@ -26,9 +36,6 @@ layout: default
     </dl>
     {%- endif %}
   </header>
-  {%- if page.image %}
-  <img class="post-img" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}">
-  {%- endif %}
   <div class="prose">
     {{ content }}
   </div>
