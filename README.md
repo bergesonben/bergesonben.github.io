@@ -23,7 +23,7 @@ Extra fields by section:
 |---|---|---|
 | `tinkering` | `tags` | Car posts get a car tag (`fj-cruiser`, `300cd`, `m850i`) so the Garage tile links to them. |
 | `kitchen` | `cuisine`, `time_minutes`, `serves` | `cuisine` drives the kitchen filter. |
-| `eating-out` | `place`, `cuisine`, `price`, `verdict` | `price` is `$` to `$$$$`. Keep `place` spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
+| `eating-out` | `place`, `cuisine`, `price`, `verdict` | `price` is `$` to `$$$$`. `place` takes one value or a list (`place: [SoCal, Taipei]`). Keep its spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
 | `reading` | `tags` | |
 
 Filter chips on each section page are generated from the values your posts use, so a new cuisine or place shows up automatically. Filters also work from the URL: `/eating-out/?place=Taipei`, `/tinkering/?tags=fj-cruiser`.

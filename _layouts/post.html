@@ -13,7 +13,7 @@ layout: default
     </div>
     {%- if page.section == "eating-out" %}
     <dl class="fact-strip">
-      {%- if page.place %}<div><dt class="mono">Place</dt><dd>{{ page.place }}</dd></div>{% endif %}
+      {%- if page.place %}<div><dt class="mono">Place</dt><dd>{{ page.place | join: ", " }}</dd></div>{% endif %}
       {%- if page.cuisine %}<div><dt class="mono">Cuisine</dt><dd>{{ page.cuisine }}</dd></div>{% endif %}
       {%- if page.price %}<div><dt class="mono">Price</dt><dd>{{ page.price }}</dd></div>{% endif %}
       {%- if page.website %}<div><dt class="mono">Website</dt><dd><a href="{{ page.website }}">{{ page.website | remove: "https://" | remove: "http://" | remove: "www." | split: "/" | first }}</a></dd></div>{% endif %}

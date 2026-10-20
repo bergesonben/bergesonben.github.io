@@ -4,7 +4,7 @@
   <img class="card-img" src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: '' | escape }}" loading="lazy">
   {%- endif %}
   <div class="card-body">
-    <div class="card-label food mono">{{ post.place | upcase }}{% if post.cuisine %} · {{ post.cuisine | upcase }}{% endif %}{% if post.price %} · {{ post.price }}{% endif %}</div>
+    <div class="card-label food mono">{{ post.place | join: ", " | upcase }}{% if post.cuisine %} · {{ post.cuisine | upcase }}{% endif %}{% if post.price %} · {{ post.price }}{% endif %}</div>
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     {%- if post.verdict %}<p>{{ post.verdict }}</p>{% elsif post.summary %}<p>{{ post.summary }}</p>{% endif %}
     <div class="card-foot mono">{{ post.date | date: "%b %-d, %Y" }}</div>
