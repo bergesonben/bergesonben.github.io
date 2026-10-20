@@ -14,6 +14,7 @@ tags: [fj-cruiser, paint] # optional
 summary: One line, shown on cards.
 image: /assets/img/posts/fj-cowl.jpg   # optional cover photo
 image_alt: The repainted cowl panel next to the windshield
+easter_egg: The cowl is still out there on I-15.   # optional; title hover text + hidden ※ in the footer
 ---
 ```
 

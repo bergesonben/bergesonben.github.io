@@ -1,5 +1,6 @@
 ---
 title: UT Craft Ramen - A5 Wagyu Ramen Event
+eater_egg: Do you have any idea how disconerting it is to still taste garlic when you're eating ice cream?!
 section: eating-out
 place: [Utah, Sandy]
 cuisine: Ramen
