@@ -1,7 +1,7 @@
 ---
 title: UT Craft Ramen - A5 Wagyu Ramen Event
 section: eating-out
-place: Utah
+place: [Utah, Sandy]
 cuisine: Ramen
 price: $20-$30
 verdict: ★★★★☆
