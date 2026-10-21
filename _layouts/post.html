@@ -32,6 +32,7 @@ layout: default
     <dl class="fact-strip">
       {%- if page.cuisine %}<div><dt class="mono">Cuisine</dt><dd>{{ page.cuisine }}</dd></div>{% endif %}
       {%- if page.time_minutes %}<div><dt class="mono">Time</dt><dd>{{ page.time_minutes }} min</dd></div>{% endif %}
+      {%- if page.bake_time %}<div><dt class="mono">Bake</dt><dd>{{ page.bake_time }} min</dd></div>{% endif %}
       {%- if page.serves %}<div><dt class="mono">Serves</dt><dd>{{ page.serves }}</dd></div>{% endif %}
     </dl>
     {%- endif %}

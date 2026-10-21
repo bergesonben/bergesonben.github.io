@@ -2,5 +2,9 @@
 <a class="recipe-row" href="{{ post.url | relative_url }}" {% include data-attrs.html post=post %}>
   <span class="recipe-num mono">{{ include.index | prepend: "0" | slice: -2, 2 }}</span>
   <span class="recipe-name">{{ post.title }}</span>
-  <span class="recipe-meta mono">{{ post.cuisine }}{% if post.cuisine and post.time_minutes %} · {% endif %}{% if post.time_minutes %}{{ post.time_minutes }} min{% endif %}</span>
+  {%- assign meta = "" | split: "" -%}
+  {%- if post.cuisine %}{% assign meta = meta | push: post.cuisine %}{% endif -%}
+  {%- if post.time_minutes %}{% assign total = post.time_minutes | append: " min" %}{% assign meta = meta | push: total %}{% endif -%}
+  {%- if post.bake_time %}{% assign bake = post.bake_time | append: " min bake" %}{% assign meta = meta | push: bake %}{% endif %}
+  <span class="recipe-meta mono">{{ meta | join: " · " }}</span>
 </a>

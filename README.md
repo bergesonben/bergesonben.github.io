@@ -23,7 +23,7 @@ Extra fields by section:
 | section | fields | notes |
 |---|---|---|
 | `tinkering` | `tags` | Car posts get a car tag (`fj-cruiser`, `300cd`, `m850i`) so the Garage tile links to them. |
-| `kitchen` | `cuisine`, `time_minutes`, `serves` | `cuisine` drives the kitchen filter. |
+| `kitchen` | `cuisine`, `time_minutes`, `bake_time`, `serves` | `cuisine` drives the kitchen filter. `bake_time` is in minutes. The "Copy ingredients" button needs a `## Ingredients` heading with the bullet list directly under it. |
 | `eating-out` | `place`, `cuisine`, `price`, `verdict` | `price` is `$` to `$$$$`. `place` takes one value or a list (`place: [SoCal, Taipei]`). Keep its spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
 | `reading` | `tags` | |
 
@@ -58,4 +58,4 @@ GitHub Pages builds the site from `main` (Settings → Pages → Deploy from a b
 
 ## Before launch
 
-Delete the three `_posts/2025-10-16-sample-*.md` posts once real ones exist.
+Delete `_posts/2025-10-16-sample-reading-notes.md` once a real reading post exists.

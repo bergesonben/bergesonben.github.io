@@ -3,6 +3,7 @@ title: TODO recipe name
 section: kitchen
 cuisine:
 time_minutes:
+bake_time:
 serves:
 summary:
 image:
