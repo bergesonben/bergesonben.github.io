@@ -4,7 +4,7 @@
     {%- for s in site.data.sections %}
     <a href="{{ s.url | relative_url }}"{% if page.url == s.url or page.section == s.id %} aria-current="page"{% endif %}>{{ s.nav }}</a>
     {%- endfor %}
-    <a href="{{ '/#garage' | relative_url }}">garage</a>
+    <a href="{{ '/archive/' | relative_url }}"{% if page.url == '/archive/' %} aria-current="page"{% endif %}>all posts</a>
     <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>about</a>
   </nav>
 </header>
