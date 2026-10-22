@@ -29,6 +29,8 @@ Extra fields by section:
 
 Filter chips on each section page are generated from the values your posts use, so a new cuisine or place shows up automatically. Filters also work from the URL: `/eating-out/?place=Taipei`, `/tinkering/?tags=fj-cruiser`.
 
+Photos go in `assets/img/posts/<post-slug>/`. Run `scripts/resize-photos` before committing: it shrinks any JPEG under `assets/img/posts/` to 1600px wide and strips EXIF (including GPS), in place. Photos it has already processed are skipped. Pass a directory or file to limit it.
+
 ## Editing the homepage
 
 Most homepage content is in `_data/`, not HTML:

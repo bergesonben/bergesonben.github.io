@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Prepare post photos for the site: rotate per EXIF, shrink to 1600px wide,
+# strip metadata (GPS included), and save as JPEG quality 82. Overwrites in place.
+#
+# Usage: scripts/resize-photos [dir-or-file ...]
+#   With no arguments, processes every image under assets/img/posts/.
+#   Files already 1600px wide or less with no metadata are skipped.
+set -euo pipefail
+
+WIDTH=1600
+QUALITY=82
+
+if command -v magick >/dev/null; then
+  mogrify=(magick mogrify)
+  identify=(magick identify)
+elif command -v mogrify >/dev/null; then
+  mogrify=(mogrify)
+  identify=(identify)
+else
+  echo "ImageMagick not found (apt install imagemagick)" >&2
+  exit 1
+fi
+
+[[ $# -eq 0 ]] && set -- "$(dirname "$0")/../assets/img/posts"
+
+find "$@" -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -print0 |
+  while IFS= read -r -d '' f; do
+    width=$("${identify[@]}" -format '%w' "$f")
+    exif=$("${identify[@]}" -format '%[EXIF:*]' "$f" 2>/dev/null || true)
+    if (( width <= WIDTH )) && [[ -z $exif ]]; then
+      continue
+    fi
+    before=$(du -h "$f" | cut -f1)
+    "${mogrify[@]}" -auto-orient -resize "${WIDTH}x>" -strip -quality "$QUALITY" "$f"
+    echo "$f: $before -> $(du -h "$f" | cut -f1) ($("${identify[@]}" -format '%wx%h' "$f"))"
+  done
