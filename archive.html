@@ -2,19 +2,25 @@
 layout: default
 title: All posts
 permalink: /archive/
+filterable: true
+filters:
+  - key: section
+    label: Section
 ---
 {%- assign years = site.posts | group_by_exp: "p", "p.date | date: '%Y'" -%}
 <section class="section section-page">
   <div class="section-head">
     <div class="section-title"><h1>All posts</h1></div>
   </div>
+  {% include filters.html section=page posts=site.posts %}
+  <div class="archive" data-filterable>
   {%- for y in years %}
-  <div class="archive-year">
+  <div class="archive-year" data-filter-block>
     <h2 class="archive-year-label mono">{{ y.name }}</h2>
     <div class="tile archive-list">
       {%- for post in y.items %}
       {%- assign sec = site.data.sections | where: "id", post.section | first %}
-      <a class="archive-row" href="{{ post.url | relative_url }}">
+      <a class="archive-row" href="{{ post.url | relative_url }}" {% include data-attrs.html post=post %}>
         <time class="archive-date mono" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" | upcase }}</time>
         <span class="archive-title">{{ post.title }}</span>
         {%- if sec %}<span class="archive-section mono">{{ sec.nav }}</span>{% endif %}
@@ -25,4 +31,6 @@ permalink: /archive/
   {%- else %}
   <p class="empty">Nothing here yet. Check back soon.</p>
   {%- endfor %}
+  </div>
+  <p class="empty" data-empty hidden>Nothing matches that filter yet.</p>
 </section>

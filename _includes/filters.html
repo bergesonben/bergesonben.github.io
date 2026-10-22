@@ -12,7 +12,9 @@ Params: section, posts
     <span class="filter-label mono">{{ f.label }}</span>
     <button type="button" class="chip mono" data-value="" aria-pressed="true">All</button>
     {%- for v in raw %}{% if v != "" %}
-    <button type="button" class="chip mono" data-value="{{ v | escape }}" aria-pressed="false">{{ v }}</button>
+    {%- assign v_label = v -%}
+    {%- if f.key == "section" %}{% assign v_sec = site.data.sections | where: "id", v | first %}{% if v_sec %}{% assign v_label = v_sec.nav %}{% endif %}{% endif %}
+    <button type="button" class="chip mono" data-value="{{ v | escape }}" aria-pressed="false">{{ v_label }}</button>
     {%- endif %}{% endfor %}
   </div>
   {%- endif %}

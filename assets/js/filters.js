@@ -7,6 +7,7 @@
 
   var items = Array.prototype.slice.call(list.querySelectorAll("[data-item]"));
   var groups = Array.prototype.slice.call(bar.querySelectorAll("[data-filter-group]"));
+  var blocks = Array.prototype.slice.call(list.querySelectorAll("[data-filter-block]"));
   var empty = document.querySelector("[data-empty]");
   var params = new URLSearchParams(window.location.search);
   var state = {};
@@ -44,6 +45,10 @@
       group.querySelectorAll("button").forEach(function (btn) {
         btn.setAttribute("aria-pressed", String(btn.getAttribute("data-value") === state[key]));
       });
+    });
+    // Hide wrappers (e.g. archive years) left with no visible items.
+    blocks.forEach(function (block) {
+      block.hidden = !block.querySelector("[data-item]:not([hidden])");
     });
     if (empty) empty.hidden = shown > 0;
   }

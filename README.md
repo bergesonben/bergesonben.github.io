@@ -27,7 +27,7 @@ Extra fields by section:
 | `eating-out` | `place`, `cuisine`, `price`, `verdict` | `price` is `$` to `$$$$`. `place` takes one value or a list (`place: [SoCal, Taipei]`). Keep its spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
 | `reading` | `tags` | |
 
-Filter chips on each section page are generated from the values your posts use, so a new cuisine or place shows up automatically. Filters also work from the URL: `/eating-out/?place=Taipei`, `/tinkering/?tags=fj-cruiser`.
+Filter chips on each section page are generated from the values your posts use, so a new cuisine or place shows up automatically. Filters also work from the URL: `/eating-out/?place=Taipei`, `/tinkering/?tags=fj-cruiser`, `/archive/?section=kitchen`.
 
 Photos go in `assets/img/posts/<post-slug>/`. Run `scripts/resize-photos` before committing: it shrinks any JPEG under `assets/img/posts/` to 1600px wide and strips EXIF (including GPS), in place. Photos it has already processed are skipped. Pass a directory or file to limit it.
 

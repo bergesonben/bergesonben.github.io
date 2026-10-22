@@ -186,14 +186,16 @@ a.tag:hover { color: var(--text); }
 .recipe-meta { font-size: 13px; color: var(--food); }
 
 /* Archive */
+.archive { display: flex; flex-direction: column; gap: 28px; }
 .archive-year { display: flex; flex-direction: column; gap: 12px; }
+.archive-year[hidden] { display: none; }
 .archive-year-label { font-size: 14px; font-weight: 600; color: var(--accent); }
 .archive-list { padding: 4px 28px; display: flex; flex-direction: column; }
 .archive-row {
   display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px;
-  padding: 16px 0; border-bottom: 1px solid var(--rule); text-decoration: none;
+  padding: 16px 0; text-decoration: none;
 }
-.archive-row:last-child { border-bottom: 0; }
+.archive-row:not([hidden]) ~ .archive-row:not([hidden]) { border-top: 1px solid var(--rule); }
 .archive-row[hidden] { display: none; }
 .archive-date { font-size: 13px; color: var(--muted); width: 56px; }
 .archive-title { flex: 1 1 240px; font-size: 19px; font-weight: 600; }
