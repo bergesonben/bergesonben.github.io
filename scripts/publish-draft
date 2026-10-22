@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# Move drafts into _posts/, named YYYY-MM-DD-<slug>.md from the front matter `date:`.
+# Drafts without a `date:` get today's date. Drafts with a `# date check:` comment
+# are refused until the date is confirmed and the comment removed.
+#
+# Usage: scripts/publish-draft <draft-or-slug> [...]
+#   e.g. scripts/publish-draft zhu-ting-ji _drafts/sumac-cafe.md
+set -euo pipefail
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+[[ $# -eq 0 ]] && { sed -n '2,7s/^# \{0,1\}//p' "$0" >&2; exit 1; }
+
+status=0
+for arg in "$@"; do
+  slug=$(basename "$arg" .md)
+  src="$root/_drafts/$slug.md"
+  if [[ ! -f $src ]]; then
+    echo "$slug: no such draft" >&2; status=1; continue
+  fi
+  front=$(awk 'NR == 1 && /^---$/ { on = 1; next } on && /^---$/ { exit } on' "$src")
+  if grep -q '^# date check:' <<<"$front"; then
+    echo "$slug: has a '# date check:' comment; confirm the date and remove it first" >&2; status=1; continue
+  fi
+  date=$(sed -n 's/^date: *\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\).*/\1/p' <<<"$front" | head -1)
+  date=${date:-$(date +%F)}
+  dest="$root/_posts/$date-$slug.md"
+  if [[ -e $dest ]]; then
+    echo "$slug: $dest already exists" >&2; status=1; continue
+  fi
+  if git -C "$root" ls-files --error-unmatch "$src" >/dev/null 2>&1; then
+    git -C "$root" mv "$src" "$dest"
+  else
+    mv "$src" "$dest"
+  fi
+  echo "$slug -> _posts/$date-$slug.md"
+done
+exit $status

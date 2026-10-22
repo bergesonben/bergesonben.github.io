@@ -4,7 +4,7 @@ Source for [bitsofbenjamin.com](https://bitsofbenjamin.com): a hand-rolled Jekyl
 
 ## Writing a post
 
-Every post lives in `_posts/` as `YYYY-MM-DD-some-title.md` and belongs to one section. Unfinished posts go in `_drafts/` (no date in the filename) and don't publish until you move them.
+Every post lives in `_posts/` as `YYYY-MM-DD-some-title.md` and belongs to one section. Unfinished posts go in `_drafts/` (no date in the filename) and don't publish until you move them. `scripts/publish-draft <slug> [...]` does the move, naming the file from the draft's `date:` (today if it has none). It refuses drafts that still have a `# date check:` comment.
 
 ```yaml
 ---
