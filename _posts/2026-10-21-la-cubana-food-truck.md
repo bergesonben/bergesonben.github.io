@@ -3,7 +3,7 @@ title: La Cubana Food Truck
 easter_egg: Whoever decided to put two types of pork on the same sandwich deserves a Nobel prize
 section: eating-out
 place: Utah
-cuisine: Cuban, Food Truck
+cuisine: [Cuban, Food Truck]
 price: $10-20
 verdict: ★★★★☆
 website: https://lacubanaslc.com/
