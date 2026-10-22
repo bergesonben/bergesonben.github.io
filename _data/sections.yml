@@ -35,6 +35,8 @@
       label: Cuisine
     - key: price
       label: Price
+    - key: verdict
+      label: Stars
 
 - id: reading
   number: "05"
