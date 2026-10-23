@@ -24,7 +24,7 @@ Extra fields by section:
 |---|---|---|
 | `tinkering` | `tags` | Car posts get a car tag (`fj-cruiser`, `300cd`, `m850i`) so the Garage tile links to them. |
 | `kitchen` | `cuisine`, `time_minutes`, `bake_time`, `serves` | `cuisine` drives the kitchen filter. `bake_time` is in minutes. The "Copy ingredients" button needs a `## Ingredients` heading with the bullet list directly under it. |
-| `eating-out` | `place`, `cuisine`, `price`, `verdict` | `price` is `$` to `$$$$`. `place` and `cuisine` take one value or a list (`place: [SoCal, Taipei]`, `cuisine: [Mexican, Salvadoran]`); each list value gets its own filter chip. Keep spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
+| `eating-out` | `place`, `cuisine`, `price`, `verdict`, `website`, `google_maps` | `price` is `$` to `$$$$`. `website` and `google_maps` are URLs, shown as "Website" and "Google Maps" links. `place` and `cuisine` take one value or a list (`place: [SoCal, Taipei]`, `cuisine: [Mexican, Salvadoran]`); each list value gets its own filter chip. Keep spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
 | `reading` | `tags` | |
 
 Filter chips on each section page are generated from the values your posts use, so a new cuisine or place shows up automatically. Filters also work from the URL: `/eating-out/?place=Taipei`, `/tinkering/?tags=fj-cruiser`, `/archive/?section=kitchen`.

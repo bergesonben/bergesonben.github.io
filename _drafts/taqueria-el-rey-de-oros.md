@@ -2,9 +2,10 @@
 title: Taquería El Rey de Oros
 section: eating-out
 date: 2022-03-20
-# date check: short visit only (12 min), maybe takeout
-place: Utah
+place: [Utah, West Jordan]
 cuisine: Mexican
+website: http://www.taqueriaypolleriaelrey.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=Taquer%C3%ADa+El+Rey+de+Oros&query_place_id=ChIJW-xkVTeJUocRc4sL-QO7m5g
 ---
 
 They have menudo and pozole! All Latinos when we showed up. Tacos were good.

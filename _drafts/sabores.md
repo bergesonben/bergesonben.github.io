@@ -2,10 +2,10 @@
 title: Sabores
 section: eating-out
 date: 2020-04-11
-place: [Utah, Cache Valley]
+place: [Utah, Logan]
 cuisine: International
+website: https://sabores.international/
+google_maps: https://goo.gl/maps/gsJweFP55LkVWKip6
 ---
 
 No notes yet.
-
-[Google Maps](https://goo.gl/maps/gsJweFP55LkVWKip6)

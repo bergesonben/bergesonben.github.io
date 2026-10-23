@@ -2,8 +2,10 @@
 title: Toscano's
 section: eating-out
 date: 2023-05-22
-place: Utah
+place: [Utah, Draper]
 cuisine: Italian
+website: http://www.toscano-restaurant.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=Toscano+-+Draper&query_place_id=ChIJBdgNbqaHUocR27IbuQV02qE
 ---
 
 ## Bruschetta

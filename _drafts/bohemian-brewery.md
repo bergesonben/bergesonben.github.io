@@ -2,8 +2,11 @@
 title: Bohemian Brewery
 section: eating-out
 date: 2026-02-22
-place: Utah
-cuisine: German
+place: [Utah, Midvale]
+cuisine: [German, Bar]
+website: http://www.bohemianbrewery.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=Bohemian+Brewery&query_place_id=ChIJuRATobOJUocR0ubSfWMg9cg
+verdict: ★★★★☆
 ---
 
 Busy during weekends and lunch times, be prepared to wait.

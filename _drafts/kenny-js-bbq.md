@@ -2,18 +2,20 @@
 title: Kenny J's BBQ
 section: eating-out
 date: 2025-09-04
-place: Utah
+place: [Utah, South Jordan]
 cuisine: BBQ
-verdict: ★★★★★
+verdict: ★★★★☆
+website: http://kennyjsbbq.com/
+google_maps: https://maps.app.goo.gl/AcVbBae6tAnq4hSG8
 menu:
   - item: Brisket
-    rating: ★★★★★
-  - item: Funeral Potatoes
-    rating: ★★★★★
-  - item: Hatch Green Chile and Cheddar Sausage
-    rating: ★★☆☆☆
-  - item: "Mac & Cheese"
     rating: ★★★★☆
+  - item: Funeral Potatoes
+    rating: ★★★★☆
+  - item: Hatch Green Chile and Cheddar Sausage
+    rating: ★☆☆☆☆
+  - item: "Mac & Cheese"
+    rating: ★★★☆☆
 ---
 
 ## Brisket
@@ -24,4 +26,4 @@ Very tender and flavorful. Best I've had.
 
 Texture was weird.
 
-[Google Maps](https://maps.app.goo.gl/AcVbBae6tAnq4hSG8)
+I ended up buying a large cooked brisket for Thanksgiving one year.

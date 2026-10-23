@@ -2,8 +2,11 @@
 title: Dog Haus
 section: eating-out
 date: 2023-11-13
-place: Utah
+place: [Utah, Sandy]
 cuisine: Burgers
+website: https://sandy.doghaus.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=Dog+Haus&query_place_id=ChIJ9V0l0cWHUocRy4WrkqyDqpc
+verdict: ★★★☆☆
 ---
 
 Burgers and dogs served on Hawaiian rolls. Both are good, not for the meats themselves, but for the condiments and other toppings. Had some good vegan options as well.

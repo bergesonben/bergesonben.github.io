@@ -2,11 +2,14 @@
 title: Ozora Izakaya
 section: eating-out
 date: 2024-01-20
-place: Utah
+place: [Utah, Salt Lake City]
 cuisine: Japanese
+website: http://www.ozoraizakaya.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=Ozora+Izakaya+Japanese+Bar+%26+Tapas+%28Sugarhouse%29&query_place_id=ChIJKe-X1WOLUocREH6J6lv2fPM
+verdict: ★★★★☆
 ---
 
-Sashimi and nigiri was really good, probably the best I've had in Utah, including Takashi. Dishes I liked:
+Sashimi and nigiri was really good. Dishes I liked:
 
 ## Buta Kakuni
 

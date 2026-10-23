@@ -1,0 +1,26 @@
+---
+title: Grill Bar 炭烤吧
+section: eating-out
+date: 2025-09-28
+place: [Utah, Taylorsville]
+cuisine: Chinese
+website: https://grillbarsaltlakecity.com/
+google_maps: https://www.google.com/maps/place/Grill+Bar+-+%E7%82%AD%E7%83%A4%E5%90%A7/@40.6514664,-111.9460142,17z/data=!3m1!4b1!4m6!3m5!1s0x87528b58bed819e1:0xea439a179a6a2e08!8m2!3d40.6514664!4d-111.9434393!16s%2Fg%2F11xfrlblt6
+image: /assets/img/posts/grill-bar/grilled-sea-bass.jpg
+image_alt: Grilled sea bass
+verdict: ★★★★☆
+---
+
+No notes yet.
+
+## Grilled Sea Bass
+
+![Grilled sea bass](/assets/img/posts/grill-bar/grilled-sea-bass.jpg)
+
+$35.99.
+
+## Sliced Black Fish Congee
+
+![Sliced black fish congee](/assets/img/posts/grill-bar/sliced-black-fish-congee.jpg)
+
+$17.99 small, $34.99 large.

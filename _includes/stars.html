@@ -1,0 +1,6 @@
+{%- comment -%}
+Prints a star rating. A half star is written as ⯪ in front matter and drawn as
+a ☆ with the left half of a ★ laid over it, so it matches the other stars.
+Params: value
+{%- endcomment -%}
+{{- include.value | replace: "⯪", '<span class="star-half">☆</span>' -}}

@@ -2,9 +2,11 @@
 title: El Mexsal
 section: eating-out
 date: 2025-03-21
-place: Utah
+place: [Utah, Provo]
 cuisine: [Mexican, Salvadoran]
-# visited 2024-05-18
+website: https://elmexsal.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=El+Mexsal+%7C+Mexican+%E2%80%A2+Salvadorian&query_place_id=ChIJm8mkkVaXTYcRTDSzS7LoHG0
+verdict: ★★★☆☆
 ---
 
-Pupusas were very good.
+Pupusas were good.

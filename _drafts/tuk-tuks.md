@@ -1,0 +1,15 @@
+---
+title: Tuk Tuk's
+section: eating-out
+date: 2025-10-06
+place: [Utah, Draper]
+cuisine: Thai
+website: https://tuktuks-slc.com/draper
+google_maps: https://www.google.com/maps/search/?api=1&query=Tuk+Tuk%27s+of+Draper&query_place_id=ChIJkVbjq-SHUocRzrvhokDVwJo
+image: /assets/img/posts/tuk-tuks/pineapple-fried-rice.jpg
+image_alt: Pineapple fried rice
+---
+
+## Photos
+
+![Pineapple fried rice](/assets/img/posts/tuk-tuks/pineapple-fried-rice.jpg)

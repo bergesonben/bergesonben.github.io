@@ -2,8 +2,9 @@
 title: Red Iguana 2
 section: eating-out
 date: 2024-06-02
-place: Utah
+place: [Utah, Salt Lake City]
 cuisine: Mexican
+google_maps: https://www.google.com/maps/search/?api=1&query=Red+Iguana+2&query_place_id=ChIJj096gVf0UocR9ymswczDHHU
 ---
 
 The moles were really good. The tamarindo margarita was good.

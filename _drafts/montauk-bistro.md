@@ -2,8 +2,10 @@
 title: Montauk Bistro
 section: eating-out
 date: 2024-07-17
-place: Utah
+place: [Utah, Draper]
 cuisine: Vietnamese
+website: http://www.montauk-bistro.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=Montauk+Bistro&query_place_id=ChIJV1MfhS2HUocRyxlNMxN2n6M
 ---
 
 Small hole in the wall restaurant. Everything is made in-house.

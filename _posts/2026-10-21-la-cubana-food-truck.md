@@ -7,6 +7,7 @@ cuisine: [Cuban, Food Truck]
 price: $10-20
 verdict: ★★★★☆
 website: https://lacubanaslc.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=La+Cubana+Food+Truck+%26+Catering&query_place_id=ChIJ6WMaHVz3UocRdXBL2aIeE5g
 menu:
   - item: Cuban Sampler Platter
     rating: ★★★☆☆

@@ -2,10 +2,10 @@
 title: Tandoori Oven
 section: eating-out
 date: 2016-12-17
-place: [Utah, Cache Valley]
+place: [Utah, Logan]
 cuisine: Indian
+website: https://tandooriovenlogan.com/
+google_maps: https://maps.app.goo.gl/dGdSzCBPnT8HFE1N9
 ---
 
 Parking sucks.
-
-[Google Maps](https://g.page/TandooriOvenLogan?share)

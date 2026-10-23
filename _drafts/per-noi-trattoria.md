@@ -2,9 +2,12 @@
 title: Per Noi Trattoria
 section: eating-out
 date: 2024-06-01
-place: Utah
+place: [Utah, Salt Lake City]
 cuisine: Italian
 # visited 2024-06-01
+website: http://www.pernoitrattoria.com/
+google_maps: https://www.google.com/maps/search/?api=1&query=Per+Noi+Trattoria&query_place_id=ChIJy3V2MCVgUocRZHJEDp-OsCc
+verdict: ★★★★☆
 ---
 
 Not too expensive.

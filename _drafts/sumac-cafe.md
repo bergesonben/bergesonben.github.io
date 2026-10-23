@@ -2,18 +2,20 @@
 title: Sumac Cafe
 section: eating-out
 date: 2026-08-22
-place: Utah
+place: [Utah, Cottonwood Heights]
 cuisine: Persian
-verdict: ★★★★★
+verdict: ★★★★☆
+website: http://sumaccafeslc.com/
+google_maps: https://maps.app.goo.gl/AeTN5TEKSV7XyXch6
 menu:
   - item: Tahdeeg
-    rating: ★★★★☆
+    rating: ★★★☆☆
   - item: Dolmas
-    rating: ★★★★★
+    rating: ★★★★☆
   - item: Bone-in Lamb
-    rating: ★★★★★
+    rating: ★★★★☆
   - item: Saffron Ice Cream
-    rating: ★★★★★
+    rating: ★★★★☆
 ---
 
 ## Tahdeeg
@@ -27,5 +29,3 @@ First time having dolmas and I loved it. It has a bit of sweetness to it that I'
 ## Bone-in Lamb
 
 So tender and flavorful. The rice that came with it was very good.
-
-[Google Maps](https://maps.app.goo.gl/AeTN5TEKSV7XyXch6)

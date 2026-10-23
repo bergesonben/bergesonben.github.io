@@ -2,24 +2,40 @@
 title: Log Haven
 section: eating-out
 date: 2026-08-30
-place: Utah
+place: [Utah, Salt Lake City]
 cuisine: [American, Fine Dining]
 verdict: ★★★★☆
+website: http://www.log-haven.com/
+google_maps: https://maps.app.goo.gl/Zw5TbdftXDb6MJ468
 menu:
   - item: House Bread with Truffle Butter
-    rating: ★★★★★
-  - item: Steak Au Poivre
     rating: ★★★★☆
+  - item: Steak Au Poivre
+    rating: ★★★☆☆
   - item: Ricotta Dulce-Brioche Bread Pudding
-    rating: ★★★★★
+    rating: ★★★★☆
+image: /assets/img/posts/log-haven/steak-au-poivre.jpg
+image_alt: Steak au poivre
 ---
 
 Really cool atmosphere. I came at night this time, but would really like to come during the day to see the scenery.
 
+## Korean Fried Cauliflower
+
+![Korean fried cauliflower](/assets/img/posts/log-haven/korean-fried-cauliflower.jpg)
+
+Spiced cashews, scallions, sweet and spicy gochujang glaze.
+
 ## Steak Au Poivre
+
+![Steak au poivre](/assets/img/posts/log-haven/steak-au-poivre.jpg)
 
 Charred brussel sprouts, slab bacon, duck fat fingerling potatoes, green peppercorn sauce, truffle aioli.
 
 Potatoes and brussel sprouts were excellent. Steak was good, but not the best, could have used more seasoning.
 
-[Google Maps](https://maps.app.goo.gl/Zw5TbdftXDb6MJ468)
+## Ahi Tuna Tataki
+
+![Ahi tuna tataki](/assets/img/posts/log-haven/ahi-tuna-tataki.jpg)
+
+Miso-edamame congee, grilled pineapple salsa, fermented black bean-yakitori, crisp taro.
