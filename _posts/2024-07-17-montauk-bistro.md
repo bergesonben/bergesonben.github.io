@@ -4,6 +4,7 @@ section: eating-out
 date: 2024-07-17
 place: [Utah, Draper]
 cuisine: Vietnamese
+verdict: ★★★☆☆
 website: http://www.montauk-bistro.com/
 google_maps: https://www.google.com/maps/search/?api=1&query=Montauk+Bistro&query_place_id=ChIJV1MfhS2HUocRyxlNMxN2n6M
 ---

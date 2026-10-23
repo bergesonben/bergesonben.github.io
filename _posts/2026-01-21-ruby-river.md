@@ -4,6 +4,7 @@ section: eating-out
 date: 2026-01-21
 place: [Utah, Salt Lake City]
 cuisine: Steak
+verdict: ★★★☆☆
 website: http://www.rubyriver.com/
 google_maps: https://www.google.com/maps/search/?api=1&query=Ruby+River+Steakhouse&query_place_id=ChIJFUQN92j1UocRg9dhaW2jbCc
 ---

@@ -4,6 +4,7 @@ section: eating-out
 date: 2022-05-14
 place: [Utah, Logan]
 cuisine: Chinese
+verdict: ★★★☆☆
 google_maps: https://goo.gl/maps/a6RKSKxKFxCGtMrD7
 ---
 

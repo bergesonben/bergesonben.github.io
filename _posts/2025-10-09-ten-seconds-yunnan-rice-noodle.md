@@ -4,6 +4,7 @@ section: eating-out
 date: 2025-10-09
 place: [Utah, South Salt Lake]
 cuisine: Chinese
+verdict: ★★★☆☆
 website: https://www.tensecondsut.com/
 google_maps: https://www.google.com/maps/search/?api=1&query=Ten+Seconds+Yunnan+Rice+Noodle+%E5%8D%81%E7%A7%92%E5%88%B0%E4%BA%91%E5%8D%97%E8%BF%87%E6%A1%A5%E7%B1%B3%E7%BA%BF&query_place_id=ChIJs9i1e8KJUocR1ZvML6UqakE
 ---

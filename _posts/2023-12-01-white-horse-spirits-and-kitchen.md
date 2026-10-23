@@ -4,6 +4,7 @@ section: eating-out
 date: 2023-12-01
 place: [Utah, Salt Lake City]
 cuisine: [American, Bar]
+verdict: ★★★☆☆
 website: https://www.whitehorseslc.com/
 google_maps: https://www.google.com/maps/search/?api=1&query=White+Horse+Spirits+%26+Kitchen&query_place_id=ChIJLRhGIxD1UocR9stN4MFJI-c
 ---

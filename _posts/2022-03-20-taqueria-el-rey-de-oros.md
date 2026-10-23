@@ -4,6 +4,7 @@ section: eating-out
 date: 2022-03-20
 place: [Utah, West Jordan]
 cuisine: Mexican
+verdict: ★★★☆☆
 website: http://www.taqueriaypolleriaelrey.com/
 google_maps: https://www.google.com/maps/search/?api=1&query=Taquer%C3%ADa+El+Rey+de+Oros&query_place_id=ChIJW-xkVTeJUocRc4sL-QO7m5g
 ---
