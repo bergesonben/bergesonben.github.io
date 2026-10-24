@@ -5,9 +5,11 @@ cuisine: Taiwanese
 time_minutes: 120
 serves:
 summary: Pork belly braised with shallots, shiitake, soy and five spice, with eggs simmered in the sauce.
-image:
-image_alt:
+image: /assets/img/posts/braised-pork-rice/braised-pork-rice.jpg
+image_alt: Braised pork rice topped with a halved soy-braised egg and fried shallots
 ---
+
+![Braised pork rice topped with a halved soy-braised egg and fried shallots](/assets/img/posts/braised-pork-rice/braised-pork-rice.jpg)
 
 ## Ingredients
 
