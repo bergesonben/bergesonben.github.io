@@ -1,13 +1,19 @@
 // "Copy ingredients" button on recipe posts. Copies the list under the Ingredients
-// heading, one item per line, so it pastes into a Keep checklist as separate items.
+// heading (including lists under ### subheadings), one item per line, so it pastes
+// into a Keep checklist as separate items.
 (function () {
   var heading = document.getElementById("ingredients");
-  var list = heading && heading.nextElementSibling;
-  if (!list || list.tagName !== "UL" || !navigator.clipboard) return;
+  if (!heading || !navigator.clipboard) return;
 
-  var text = Array.prototype.map.call(list.querySelectorAll(":scope > li"), function (li) {
-    return li.textContent.trim();
-  }).join("\n");
+  var items = [];
+  for (var el = heading.nextElementSibling; el && el.tagName !== "H2"; el = el.nextElementSibling) {
+    if (el.tagName !== "UL") continue;
+    Array.prototype.forEach.call(el.querySelectorAll(":scope > li"), function (li) {
+      items.push(li.textContent.trim());
+    });
+  }
+  if (!items.length) return;
+  var text = items.join("\n");
 
   var btn = document.createElement("button");
   btn.type = "button";
