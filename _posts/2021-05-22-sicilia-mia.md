@@ -2,6 +2,7 @@
 title: Sicilia Mia
 section: eating-out
 date: 2021-05-22
+description: Italian restaurant in Salt Lake City with a really good carbonara.
 place: [Utah, Salt Lake City]
 cuisine: Italian
 verdict: ★★★★☆

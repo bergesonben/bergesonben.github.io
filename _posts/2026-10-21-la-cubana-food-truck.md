@@ -2,6 +2,7 @@
 title: La Cubana Food Truck
 easter_egg: Whoever decided to put two types of pork on the same sandwich deserves a Nobel prize
 section: eating-out
+description: Cuban food truck. Got the sampler platter and a Miami Cuban sandwich for a quick office lunch.
 place: Utah
 cuisine: [Cuban, Food Truck]
 price: $10-20

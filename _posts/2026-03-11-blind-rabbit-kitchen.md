@@ -2,6 +2,7 @@
 title: Blind Rabbit Kitchen
 section: eating-out
 date: 2026-03-11
+description: American restaurant in Salt Lake City, Sugar House area.
 place: [Utah, Salt Lake City]
 cuisine: American
 verdict: ★★★☆☆

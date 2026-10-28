@@ -2,6 +2,7 @@
 title: Taquería El Rey de Oros
 section: eating-out
 date: 2022-03-20
+description: Mexican taquería in West Jordan with tacos, menudo and pozole.
 place: [Utah, West Jordan]
 cuisine: Mexican
 verdict: ★★★☆☆

@@ -2,6 +2,7 @@
 title: El Salvador Los Primos
 section: eating-out
 date: 2026-02-15
+description: Salvadoran restaurant in Logan with good pupusas.
 place: [Utah, Logan]
 cuisine: Salvadoran
 website: https://www.elsalvadorlosprimos.com/

@@ -2,6 +2,7 @@
 title: Kenny J's BBQ
 section: eating-out
 date: 2025-09-04
+description: BBQ restaurant in South Jordan with the best brisket I've had. Skip the green chile sausage.
 place: [Utah, South Jordan]
 cuisine: BBQ
 verdict: ★★★★☆

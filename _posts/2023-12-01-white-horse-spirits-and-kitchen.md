@@ -2,6 +2,7 @@
 title: White Horse Spirits and Kitchen
 section: eating-out
 date: 2023-12-01
+description: Bar and restaurant in Salt Lake City with mac and cheese, grilled cheese and fried olives. Seated in ten minutes on a Friday.
 place: [Utah, Salt Lake City]
 cuisine: [American, Bar]
 verdict: ★★★☆☆

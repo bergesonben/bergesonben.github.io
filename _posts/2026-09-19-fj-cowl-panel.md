@@ -3,7 +3,7 @@ title: First Time with Automotive Paint
 easter_egg: The old cowl is still out there on I-15, living its best life.
 section: tinkering
 tags: [fj-cruiser, paint]
-summary: A cowl panel flew off the FJ on the freeway; I painted a new cowl with a rattle can and installed it
+description: "A repair log: a cowl panel flew off the FJ on the freeway, so I painted a new one with a rattle can and installed it."
 image: /assets/img/posts/fj-cowl/after-closeup.jpg
 image_alt: The repainted Voodoo Blue cowl panel back in place at the base of the FJ's windshield
 ---

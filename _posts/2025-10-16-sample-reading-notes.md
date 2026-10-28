@@ -2,7 +2,7 @@
 title: "Sample: reading notes"
 section: reading
 tags: [sample]
-summary: A placeholder that shows how reading notes look. Delete it once a real one is up.
+description: Sample reading notes, a placeholder that shows the format. Delete it once a real one is up.
 sample: true
 ---
 

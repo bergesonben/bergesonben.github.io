@@ -2,6 +2,7 @@
 title: Tandoori Oven
 section: eating-out
 date: 2016-12-17
+description: Indian restaurant in Logan. Parking is rough.
 place: [Utah, Logan]
 cuisine: Indian
 verdict: ★★★☆☆

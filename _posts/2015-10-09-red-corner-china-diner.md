@@ -2,6 +2,7 @@
 title: Red Corner China Diner
 section: eating-out
 date: 2015-10-09
+description: Chinese diner in Midvale.
 place: [Utah, Midvale]
 cuisine: Chinese
 verdict: ★★★☆☆

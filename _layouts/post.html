@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{%- comment -%} Fails the build: every published post needs a description. {%- endcomment -%}
+{%- unless page.description or page.draft -%}{% include ERROR-no-description-in-{{ page.slug }} %}{%- endunless -%}
 {%- assign sec = site.data.sections | where: "id", page.section | first -%}
 <article class="post">
   <header class="post-header">

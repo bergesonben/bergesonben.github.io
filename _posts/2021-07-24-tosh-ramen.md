@@ -2,6 +2,7 @@
 title: Tosh Ramen
 section: eating-out
 date: 2021-07-24
+description: Ramen shop in Salt Lake City with decent ramen and an excellent katsu curry.
 place: [Utah, Salt Lake City]
 cuisine: Ramen
 verdict: ★★★☆☆

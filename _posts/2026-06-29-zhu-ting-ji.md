@@ -2,6 +2,7 @@
 title: Zhu Ting Ji 竹亭记
 section: eating-out
 date: 2026-06-29
+description: Chinese restaurant in Taylorsville with Sichuan dishes and xiao long bao made behind glass.
 place: [Utah, Taylorsville]
 cuisine: Chinese
 verdict: ★★★★☆

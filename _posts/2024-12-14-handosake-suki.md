@@ -2,6 +2,7 @@
 title: HandoSake Sushi
 section: eating-out
 date: 2024-12-14
+description: Sushi restaurant in Salt Lake City.
 place: [Utah, Salt Lake City]
 cuisine: Sushi
 verdict: ★★★★☆

@@ -2,6 +2,7 @@
 title: Pupuseria La Ranchera
 section: eating-out
 date: 2023-10-28
+description: Salvadoran pupusería in Logan with good pupusas.
 place: [Utah, Logan]
 cuisine: [Mexican, Salvadoran]
 verdict: ★★★☆☆

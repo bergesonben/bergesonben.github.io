@@ -2,6 +2,7 @@
 title: Urban Hill
 section: eating-out
 date: 2024-05-15
+description: Fine dining restaurant in Salt Lake City with a buffalo ribeye and a breaded pork chop.
 place: [Utah, Salt Lake City]
 cuisine: [American, Fine Dining]
 verdict: ★★★☆☆

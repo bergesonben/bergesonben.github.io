@@ -2,6 +2,7 @@
 title: Bohemian Brewery
 section: eating-out
 date: 2026-02-22
+description: German brewery and restaurant in Midvale with big soft pretzels, brats and pierogies. Expect a wait on weekends.
 place: [Utah, Midvale]
 cuisine: [German, Bar]
 website: http://www.bohemianbrewery.com/

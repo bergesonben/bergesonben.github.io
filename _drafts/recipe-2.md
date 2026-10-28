@@ -5,7 +5,7 @@ cuisine:
 time_minutes:
 bake_time:
 serves:
-summary:
+description:
 image:
 image_alt:
 ---

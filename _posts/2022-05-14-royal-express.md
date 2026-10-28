@@ -2,6 +2,7 @@
 title: Royal Express
 section: eating-out
 date: 2022-05-14
+description: Chinese restaurant in Logan with Taiwanese beef noodle soup and fried chicken.
 place: [Utah, Logan]
 cuisine: Chinese
 verdict: ★★★☆☆

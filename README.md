@@ -11,7 +11,7 @@ Every post lives in `_posts/` as `YYYY-MM-DD-some-title.md` and belongs to one s
 title: The FJ cowl panel that left on the freeway
 section: tinkering        # tinkering | kitchen | eating-out | reading
 tags: [fj-cruiser, paint] # optional
-summary: One line, shown on cards.
+description: One line saying what the post is ("Mexican restaurant in Sandy …", "A recipe for …"). Required; shown on cards, as the RSS entry, and as the meta description.
 image: /assets/img/posts/fj-cowl.jpg   # optional cover photo
 image_alt: The repainted cowl panel next to the windshield
 easter_egg: The cowl is still out there on I-15.   # optional; title hover text + hidden ※ in the footer

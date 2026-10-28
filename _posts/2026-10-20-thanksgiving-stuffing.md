@@ -3,7 +3,7 @@ title: Thanksgiving Stuffing
 section: kitchen
 cuisine: American
 bake_time: 45
-summary: Classic bread stuffing with celery, carrot, sage and parsley. Dry the bread a few days ahead.
+description: A recipe for classic bread stuffing with celery, carrot, sage and parsley. Dry the bread a few days ahead.
 ---
 
 ## Ingredients

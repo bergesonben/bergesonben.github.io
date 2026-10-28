@@ -2,6 +2,7 @@
 title: Best Chicken
 section: eating-out
 date: 2025-10-11
+description: Mom-and-pop Greek restaurant in Salt Lake City. Worth a detour just for the rice.
 place: [Utah, Salt Lake City]
 cuisine: Greek
 verdict: ★★★★★

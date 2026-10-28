@@ -42,3 +42,6 @@ exclude:
   - .bundle
   - node_modules
   - scripts
+
+feed:
+  excerpt_only: true

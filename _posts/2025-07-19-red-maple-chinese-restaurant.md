@@ -2,6 +2,7 @@
 title: Red Maple Chinese Restaurant
 section: eating-out
 date: 2025-07-19
+description: Chinese restaurant in Taylorsville.
 place: [Utah, Taylorsville]
 cuisine: Chinese
 verdict: ★★★☆☆

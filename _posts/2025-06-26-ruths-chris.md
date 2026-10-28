@@ -2,6 +2,7 @@
 title: Ruth's Chris
 section: eating-out
 date: 2025-06-26
+description: Steakhouse chain in Salt Lake City, and still the best steak I've had in Utah. Get the lobster mac and cheese.
 place: [Utah, Salt Lake City]
 cuisine: [Steak, Fine Dining]
 website: https://www.ruthschris.com/

@@ -2,6 +2,7 @@
 title: Mom's Kitchen
 section: eating-out
 date: 2024-04-13
+description: Taiwanese and Chinese restaurant in Salt Lake City.
 place: [Utah, Salt Lake City]
 cuisine: [Taiwanese, Chinese]
 verdict: ★★★☆☆

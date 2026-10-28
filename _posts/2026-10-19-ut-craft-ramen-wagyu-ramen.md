@@ -2,6 +2,7 @@
 title: UT Craft Ramen
 easter_egg: Do you have any idea how disconerting it is to still taste garlic when you're eating ice cream?!
 section: eating-out
+description: Ramen shop in Sandy. Its A5 wagyu ramen event lived up to the hype, despite a line around the building.
 place: [Utah, Sandy]
 cuisine: Ramen
 price: $20-$30

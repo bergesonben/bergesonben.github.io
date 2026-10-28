@@ -2,6 +2,7 @@
 title: Mi Ranchito
 section: eating-out
 date: 2021-07-10
+description: Mexican restaurant in South Jordan.
 place: [Utah, South Jordan]
 cuisine: Mexican
 verdict: ★★★☆☆

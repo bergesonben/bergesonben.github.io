@@ -2,6 +2,7 @@
 title: Pork N Roll
 section: eating-out
 date: 2025-10-06
+description: Colombian restaurant in Draper. The picada with pork belly, blood sausage and plantains feeds closer to four than two.
 place: [Utah, Draper]
 cuisine: Colombian
 verdict: ★★★★⯪

@@ -2,6 +2,7 @@
 title: Morty's Cafe
 section: eating-out
 date: 2019-11-19
+description: Burger restaurant in Logan.
 place: [Utah, Logan]
 cuisine: Burgers
 verdict: ★★★☆☆

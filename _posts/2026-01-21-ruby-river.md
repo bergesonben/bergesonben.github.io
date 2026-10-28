@@ -2,6 +2,7 @@
 title: Ruby River
 section: eating-out
 date: 2026-01-21
+description: Local steakhouse chain in Salt Lake City. Get the garlic butter ribeye and the root beer on tap.
 place: [Utah, Salt Lake City]
 cuisine: Steak
 verdict: ★★★☆☆

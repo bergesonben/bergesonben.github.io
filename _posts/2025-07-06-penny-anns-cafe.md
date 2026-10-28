@@ -2,6 +2,7 @@
 title: Penny Ann's Cafe
 section: eating-out
 date: 2025-07-06
+description: Busy breakfast cafe in Draper with loaded biscuits and gravy.
 place: [Utah, Draper]
 cuisine: Breakfast
 verdict: ★★★☆☆

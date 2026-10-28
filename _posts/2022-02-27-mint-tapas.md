@@ -2,6 +2,7 @@
 title: Mint Tapas
 section: eating-out
 date: 2022-02-27
+description: Tapas restaurant in Sandy. Still need to go back for the 10-course tasting.
 place: [Utah, Sandy]
 cuisine: Tapas
 verdict: ★★★☆☆

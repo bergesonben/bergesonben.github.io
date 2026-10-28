@@ -2,6 +2,7 @@
 title: "You & I Kitchen"
 section: eating-out
 date: 2026-06-27
+description: Vietnamese pho restaurant in West Jordan.
 place: [Utah, West Jordan]
 cuisine: Vietnamese
 website: https://www.youandikitchen.com/

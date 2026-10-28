@@ -2,6 +2,7 @@
 title: Ozora Izakaya
 section: eating-out
 date: 2024-01-20
+description: Japanese izakaya in Salt Lake City with sashimi, pork belly kakuni, hamachi crudo and whole-tentacle fried calamari.
 place: [Utah, Salt Lake City]
 cuisine: Japanese
 website: http://www.ozoraizakaya.com/

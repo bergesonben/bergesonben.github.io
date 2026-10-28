@@ -2,6 +2,7 @@
 title: Localz Bistro
 section: eating-out
 date: 2024-02-24
+description: American restaurant in Sandy with jambalaya, shrimp and grits, and a too-salty poutine.
 place: [Utah, Sandy]
 cuisine: [American, Cajun]
 verdict: ★★★☆☆

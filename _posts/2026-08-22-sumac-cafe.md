@@ -2,6 +2,7 @@
 title: Sumac Cafe
 section: eating-out
 date: 2026-08-22
+description: Persian restaurant in Cottonwood Heights with tahdig, dolmas and very tender bone-in lamb.
 place: [Utah, Cottonwood Heights]
 cuisine: Persian
 verdict: ★★★★☆

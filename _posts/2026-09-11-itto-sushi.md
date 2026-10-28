@@ -2,6 +2,7 @@
 title: Itto Sushi
 section: eating-out
 date: 2026-09-11
+description: Sushi restaurant in Midvale with very fresh, high-quality fish and an amazing omakase.
 place: [Utah, Midvale]
 cuisine: Sushi
 website: http://ittoutah.com/

@@ -2,6 +2,7 @@
 title: Ten Seconds Yunnan Rice Noodle
 section: eating-out
 date: 2025-10-09
+description: Yunnan rice noodle shop in South Salt Lake. The chewy noodles come in a stone bowl that stays hot through the meal.
 place: [Utah, South Salt Lake]
 cuisine: Chinese
 verdict: ★★★☆☆

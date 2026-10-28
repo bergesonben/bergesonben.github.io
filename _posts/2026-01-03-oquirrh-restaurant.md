@@ -2,6 +2,7 @@
 title: Oquirrh Restaurant
 section: eating-out
 date: 2026-01-03
+description: American restaurant in Salt Lake City with a well-seasoned ribeye and a top-notch lobster pasta special.
 place: [Utah, Salt Lake City]
 cuisine: American
 verdict: ★★★★★

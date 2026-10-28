@@ -2,6 +2,7 @@
 title: Makanmakan Asian Street Food
 section: eating-out
 date: 2024-08-03
+description: Indonesian street food restaurant in Sandy. The fried rice and fried noodles are the standouts.
 place: [Utah, Sandy]
 cuisine: Indonesian
 website: http://makanmakansandy.com/

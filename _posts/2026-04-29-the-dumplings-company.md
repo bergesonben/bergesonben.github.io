@@ -2,6 +2,7 @@
 title: The Dumplings Company
 section: eating-out
 date: 2026-04-29
+description: Indian restaurant in Millcreek.
 place: [Utah, Millcreek]
 cuisine: Indian
 verdict: ★★★★☆

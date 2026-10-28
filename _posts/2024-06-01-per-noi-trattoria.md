@@ -2,6 +2,7 @@
 title: Per Noi Trattoria
 section: eating-out
 date: 2024-06-01
+description: Italian trattoria in Salt Lake City, not too expensive, with possibly the best fettuccine alfredo I've had.
 place: [Utah, Salt Lake City]
 cuisine: Italian
 # visited 2024-06-01

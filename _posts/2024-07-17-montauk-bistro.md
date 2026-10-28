@@ -2,6 +2,7 @@
 title: Montauk Bistro
 section: eating-out
 date: 2024-07-17
+description: Hole-in-the-wall Vietnamese restaurant in Draper with a great banh mi. Everything is made in-house.
 place: [Utah, Draper]
 cuisine: Vietnamese
 verdict: ★★★☆☆

@@ -2,6 +2,7 @@
 title: The Crêpery Logan
 section: eating-out
 date: 2023-06-03
+description: Crêpe and breakfast restaurant in Logan.
 place: [Utah, Logan]
 cuisine: Breakfast
 verdict: ★★★☆☆

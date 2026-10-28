@@ -4,7 +4,7 @@ section: kitchen
 cuisine: Taiwanese
 time_minutes: 120
 serves:
-summary: Pork belly braised with shallots, shiitake, soy and five spice, with eggs simmered in the sauce.
+description: A recipe for pork belly braised with shallots, shiitake, soy and five spice, with eggs simmered in the sauce.
 image:
 image_alt:
 ---

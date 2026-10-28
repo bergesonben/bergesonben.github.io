@@ -2,7 +2,7 @@
 title: "300CD leak diary, part 1"
 section: tinkering
 tags: [300cd]
-summary:
+description:
 image:
 image_alt:
 ---

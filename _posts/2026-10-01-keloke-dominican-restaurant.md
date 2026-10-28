@@ -2,6 +2,7 @@
 title: Keloke Dominican Restaurant
 section: eating-out
 date: 2026-10-01
+description: Dominican restaurant in Provo with fried pork belly, moro negro and potato salad.
 place: [Utah, Provo]
 cuisine: Dominican
 website: https://m.facebook.com/kelokerestaurant/
