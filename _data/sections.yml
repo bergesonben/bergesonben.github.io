@@ -48,3 +48,14 @@
   filters:
     - key: tags
       label: Topic
+
+- id: thinking
+  number: "06"
+  nav: thinking
+  title: Things I think about
+  url: /thinking/
+  blurb: Opinions, and how I approach things.
+  card: post
+  filters:
+    - key: tags
+      label: Topic

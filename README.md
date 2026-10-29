@@ -9,7 +9,7 @@ Every post lives in `_posts/` as `YYYY-MM-DD-some-title.md` and belongs to one s
 ```yaml
 ---
 title: The FJ cowl panel that left on the freeway
-section: tinkering        # tinkering | kitchen | eating-out | reading
+section: tinkering        # tinkering | kitchen | eating-out | reading | thinking
 tags: [fj-cruiser, paint] # optional
 description: One line saying what the post is ("Mexican restaurant in Sandy …", "A recipe for …"). Required; shown on cards, as the RSS entry, and as the meta description.
 image: /assets/img/posts/fj-cowl.jpg   # optional cover photo
@@ -23,9 +23,10 @@ Extra fields by section:
 | section | fields | notes |
 |---|---|---|
 | `tinkering` | `tags` | Car posts get a car tag (`fj-cruiser`, `300cd`, `m850i`) so the Garage tile links to them. |
-| `kitchen` | `cuisine`, `time_minutes`, `bake_time`, `serves` | `cuisine` drives the kitchen filter. `bake_time` is in minutes. The "Copy ingredients" button needs a `## Ingredients` heading with the bullet list directly under it. |
+| `kitchen` | `cuisine`, `time_minutes`, `bake_time`, `serves` | `cuisine` drives the kitchen filter. `bake_time` is in minutes. The "Copy ingredients" button copies every bullet list between `## Ingredients` and the next `##` heading, including lists under `###` subheadings. |
 | `eating-out` | `place`, `cuisine`, `price`, `verdict`, `website`, `google_maps` | `price` is `$` to `$$$$`. `website` and `google_maps` are URLs, shown as "Website" and "Google Maps" links. `place` and `cuisine` take one value or a list (`place: [SoCal, Taipei]`, `cuisine: [Mexican, Salvadoran]`); each list value gets its own filter chip. Keep spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
 | `reading` | `tags` | |
+| `thinking` | `tags` | |
 
 Filter chips on each section page are generated from the values your posts use, so a new cuisine or place shows up automatically. Filters also work from the URL: `/eating-out/?place=Taipei`, `/tinkering/?tags=fj-cruiser`, `/archive/?section=kitchen`.
 
