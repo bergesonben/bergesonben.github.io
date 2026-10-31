@@ -1,5 +1,5 @@
 # The "Now" card on the homepage. Edit freely; bump `updated` when you do.
-updated: 2026-10-16
+updated: 2026-10-31
 groups:
   - label: Tinkering
     items:
@@ -8,7 +8,7 @@ groups:
   - label: Reading
     items:
       - Never Split the Difference by Chris Voss
-      - The Story of Philosophy by Will Durant
+      - "Political Philosophy: A Beginners' Guide for Students and Politicians by Adam Swift"
   - label: Planning
     items:
       - Filling out this site
