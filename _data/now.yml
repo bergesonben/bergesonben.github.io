@@ -1,5 +1,5 @@
 # The "Now" card on the homepage. Edit freely; bump `updated` when you do.
-updated: 2026-10-31
+updated: 2026-11-01
 groups:
   - label: Tinkering
     items:
@@ -7,7 +7,7 @@ groups:
       - bitsofbenjamin.com
   - label: Reading
     items:
-      - Never Split the Difference by Chris Voss
+      - Heaven's River by Dennis E. Taylor
       - "Political Philosophy: A Beginners' Guide for Students and Politicians by Adam Swift"
   - label: Planning
     items:
