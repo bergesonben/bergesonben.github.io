@@ -36,7 +36,7 @@ My friend ordered this one. No picture.
 
 > Plain or Cajun (+$1) ($6.50)
 
-![A basket of Cajun-seasoned hand cut fries with a cup of orange dipping sauce](/assets/img/posts/silverside-deli/hand-cut-fries.jpg)
+![A basket of Cajun-seasoned hand cut fries with a cup of house fry sauce](/assets/img/posts/silverside-deli/hand-cut-fries.jpg)
 
 ## Conclusion
 
