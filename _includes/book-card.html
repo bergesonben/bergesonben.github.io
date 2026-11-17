@@ -1,0 +1,19 @@
+{%- assign post = include.post -%}
+{%- assign sec = site.data.sections | where: "id", post.section | first -%}
+<article class="tile card book-card" {% include data-attrs.html post=post %}>
+  <div class="card-body">
+    <div class="card-label mono">{% if include.show_section and sec %}{{ sec.nav | upcase }} · {% endif %}{{ post.date | date: "%b %-d, %Y" | upcase }}</div>
+    <div class="book-card-head">
+      <img class="book-card-cover" src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: '' | escape }}" loading="lazy">
+      <div class="book-card-meta">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {%- if post.author %}<p class="book-card-author">{{ post.author }}</p>{% endif %}
+        {%- if post.rating %}<p>{% include stars.html value=post.rating %}</p>{% endif %}
+      </div>
+    </div>
+    {%- if post.description %}<p>{{ post.description }}</p>{% endif %}
+    {%- if post.tags.size > 0 %}
+    <div class="tags">{% for t in post.tags %}<span class="tag mono">{{ t }}</span>{% endfor %}</div>
+    {%- endif %}
+  </div>
+</article>

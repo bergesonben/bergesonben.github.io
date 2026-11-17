@@ -44,7 +44,7 @@
   title: Reading notes
   url: /reading/
   blurb: Notes on books and podcasts, usually two at once.
-  card: post
+  card: book
   filters:
     - key: tags
       label: Topic

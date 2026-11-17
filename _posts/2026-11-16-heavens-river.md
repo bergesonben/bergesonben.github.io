@@ -7,6 +7,8 @@ book: "Heaven's River (Bobiverse, #4)"
 author: Dennis E. Taylor
 rating: ★★★⯪☆
 goodreads: https://www.goodreads.com/review/show/9072235955
+image: /assets/img/posts/heavens-river/cover.jpg
+image_alt: Heaven's River audiobook cover
 easter_egg: 'Like 3OH!3 said: "Don''t trust a [Hugh]"'
 ---
 
