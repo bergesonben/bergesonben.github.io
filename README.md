@@ -25,7 +25,7 @@ Extra fields by section:
 | `tinkering` | `tags` | Car posts get a car tag (`fj-cruiser`, `300cd`, `m850i`) so the Garage tile links to them. |
 | `kitchen` | `cuisine`, `time_minutes`, `bake_time`, `serves` | `cuisine` drives the kitchen filter. `bake_time` is in minutes. The "Copy ingredients" button copies every bullet list between `## Ingredients` and the next `##` heading, including lists under `###` subheadings. |
 | `eating-out` | `place`, `cuisine`, `price`, `verdict`, `website`, `google_maps` | `price` is `$` to `$$$$`. `website` and `google_maps` are URLs, shown as "Website" and "Google Maps" links. `place` and `cuisine` take one value or a list (`place: [SoCal, Taipei]`, `cuisine: [Mexican, Salvadoran]`); each list value gets its own filter chip. Keep spelling consistent (`SoCal`, `Taipei`, `Utah`); filters are built from the exact values. |
-| `reading` | `tags` | |
+| `reading` | `tags`, `book`, `author`, `rating`, `goodreads` | `book` turns on the fact strip. `rating` is a star string like `verdict`. `goodreads` is the review URL. Spoilers are `<label class="spoiler"><input type="checkbox" aria-label="Show spoiler"><span>…</span></label>`: hidden behind "(view spoiler)" until clicked. |
 | `thinking` | `tags` | |
 
 Filter chips on each section page are generated from the values your posts use, so a new cuisine or place shows up automatically. Filters also work from the URL: `/eating-out/?place=Taipei`, `/tinkering/?tags=fj-cruiser`, `/archive/?section=kitchen`.
@@ -58,7 +58,3 @@ Then open http://localhost:4000. `--drafts` shows drafts as if they were publish
 ## Hosting
 
 GitHub Pages builds the site from `main` (Settings → Pages → Deploy from a branch → `main` / root). The custom domain comes from `CNAME`.
-
-## Before launch
-
-Delete `_posts/2025-10-16-sample-reading-notes.md` once a real reading post exists.

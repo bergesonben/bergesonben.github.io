@@ -34,6 +34,13 @@ layout: default
       </dd></div>
       {%- endif %}
     </dl>
+    {%- elsif page.section == "reading" and page.book %}
+    <dl class="fact-strip">
+      <div><dt class="mono">Book</dt><dd>{{ page.book }}</dd></div>
+      {%- if page.author %}<div><dt class="mono">Author</dt><dd>{{ page.author }}</dd></div>{% endif %}
+      {%- if page.rating %}<div><dt class="mono">Rating</dt><dd>{% include stars.html value=page.rating %}</dd></div>{% endif %}
+      {%- if page.goodreads %}<div><dt class="mono">Links</dt><dd><a href="{{ page.goodreads }}">Goodreads</a></dd></div>{% endif %}
+    </dl>
     {%- elsif page.section == "kitchen" %}
     <dl class="fact-strip">
       {%- if page.cuisine %}<div><dt class="mono">Cuisine</dt><dd>{{ page.cuisine | join: ", " }}</dd></div>{% endif %}
