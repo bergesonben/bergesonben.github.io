@@ -18,6 +18,7 @@ menu:
     rating: ★★★★☆
 image: /assets/img/posts/silverside-deli/cider-braised-pork-belly.jpg
 image_alt: A cider braised pork belly hoagie cut in half, showing pork belly, mostarda, and radicchio and cabbage slaw, in a paper-lined basket
+easter_egg: As of this writing, if you go to the executive chef's instagram page, you'll be greeted with a Christmas-themed Barry Wood meme.
 ---
 
 ## Cider Braised Pork Belly
