@@ -1,5 +1,5 @@
 # The "Now" card on the homepage. Edit freely; bump `updated` when you do.
-updated: 2026-11-16
+updated: 2026-11-18
 groups:
   - label: Tinkering
     items:
@@ -7,7 +7,7 @@ groups:
       - bitsofbenjamin.com
   - label: Reading
     items:
-      - TBD
+      - Enshittification by Cory Doctorow
       - "Political Philosophy: A Beginners' Guide for Students and Politicians by Adam Swift"
   - label: Planning
     items:
