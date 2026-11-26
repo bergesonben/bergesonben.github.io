@@ -1,14 +1,13 @@
 # The "Now" card on the homepage. Edit freely; bump `updated` when you do.
-updated: 2026-11-18
+updated: 2026-11-26
 groups:
   - label: Tinkering
     items:
-      - A footwell leak on the '85 300CD
-      - bitsofbenjamin.com
+      - Shoring up personal network and software security
   - label: Reading
     items:
       - Enshittification by Cory Doctorow
       - "Political Philosophy: A Beginners' Guide for Students and Politicians by Adam Swift"
   - label: Planning
     items:
-      - Filling out this site
+      - Automation so I get a notification on my phone when either my washer or dryer is done.
