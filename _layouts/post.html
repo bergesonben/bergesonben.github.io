@@ -10,25 +10,51 @@ layout: default
     <a class="post-section mono" href="{{ sec.url | relative_url }}">{{ sec.number }} · {{ sec.title }}</a>
     {%- endif %}
     <h1{% if page.easter_egg %} title="{{ page.easter_egg | escape }}"{% endif %}>{{ page.title }}</h1>
+    {%- if page.section == "eating-out" %}
+    {%- assign venue = page -%}
+    {%- if page.restaurant %}
+    {%- assign venue = site.posts | where: "slug", page.restaurant | first -%}
+    {%- comment -%} Fails the build: `restaurant:` names no post. {%- endcomment -%}
+    {%- unless venue %}{% include ERROR-no-restaurant-{{ page.restaurant }} %}{% endunless -%}
+    {%- endif %}
+    {%- assign place = page.place | default: venue.place -%}
+    {%- assign cuisine = page.cuisine | default: venue.cuisine -%}
+    {%- assign price = page.price | default: venue.price -%}
+    {%- assign events = site.posts | where: "restaurant", page.slug -%}
+    {%- endif %}
     <div class="post-meta mono">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {%- if page.restaurant %} · event at <a href="{{ venue.url | relative_url }}">{{ venue.title }}</a>{% endif %}
     </div>
     {%- if page.section == "eating-out" %}
     <dl class="fact-strip">
-      {%- if page.place %}<div><dt class="mono">Place</dt><dd>{{ page.place | join: ", " }}</dd></div>{% endif %}
-      {%- if page.cuisine %}<div><dt class="mono">Cuisine</dt><dd>{{ page.cuisine | join: ", " }}</dd></div>{% endif %}
-      {%- if page.price %}<div><dt class="mono">Price</dt><dd>{{ page.price }}</dd></div>{% endif %}
-      {%- if page.website or page.google_maps %}<div><dt class="mono">Links</dt><dd>
-        {%- if page.website %}<a href="{{ page.website }}">Website</a>{% endif %}
-        {%- if page.website and page.google_maps %} · {% endif %}
-        {%- if page.google_maps %}<a href="{{ page.google_maps }}">Google Maps</a>{% endif -%}
+      {%- if place %}<div><dt class="mono">Place</dt><dd>{{ place | join: ", " }}</dd></div>{% endif %}
+      {%- if cuisine %}<div><dt class="mono">Cuisine</dt><dd>{{ cuisine | join: ", " }}</dd></div>{% endif %}
+      {%- if price %}<div><dt class="mono">Price</dt><dd>{{ price }}</dd></div>{% endif %}
+      {%- if venue.website or venue.google_maps %}<div><dt class="mono">Links</dt><dd>
+        {%- if venue.website %}<a href="{{ venue.website }}">Website</a>{% endif %}
+        {%- if venue.website and venue.google_maps %} · {% endif %}
+        {%- if venue.google_maps %}<a href="{{ venue.google_maps }}">Google Maps</a>{% endif -%}
       </dd></div>{% endif %}
       {%- if page.verdict %}<div class="fact-wide"><dt class="mono">Verdict</dt><dd>{% include stars.html value=page.verdict %}</dd></div>{% endif %}
-      {%- if page.menu %}
-      <div class="fact-wide"><dt class="mono">Menu</dt><dd>
+      {%- assign rating_lists = "ratings,menu" | split: "," %}
+      {%- for key in rating_lists %}
+      {%- assign list = page[key] %}
+      {%- if list %}
+      <div class="fact-wide"><dt class="mono">{{ key | capitalize }}</dt><dd>
         <ul class="menu-ratings">
-          {%- for m in page.menu %}
+          {%- for m in list %}
           <li><span class="menu-stars">{% include stars.html value=m.rating %}</span> {{ m.item }}</li>
+          {%- endfor %}
+        </ul>
+      </dd></div>
+      {%- endif %}
+      {%- endfor %}
+      {%- if events.size > 0 %}
+      <div class="fact-wide"><dt class="mono">Events</dt><dd>
+        <ul class="menu-ratings">
+          {%- for e in events %}
+          <li>{% if e.verdict %}<span class="menu-stars">{% include stars.html value=e.verdict %}</span> {% endif %}<a href="{{ e.url | relative_url }}">{{ e.event | default: e.title }}</a> <span class="event-date mono">{{ e.date | date: "%b %-d, %Y" }}</span></li>
           {%- endfor %}
         </ul>
       </dd></div>

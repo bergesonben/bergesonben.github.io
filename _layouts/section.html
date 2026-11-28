@@ -3,7 +3,8 @@ layout: default
 filterable: true
 ---
 {%- assign sec = site.data.sections | where: "id", page.section | first -%}
-{%- assign posts = site.posts | where: "section", page.section -%}
+{%- comment -%} Event posts (`restaurant:` set) are listed on their restaurant's post instead. {%- endcomment -%}
+{%- assign posts = site.posts | where: "section", page.section | where_exp: "p", "p.restaurant == nil" -%}
 <section class="section section-page">
   {% include section-head.html number=sec.number title=sec.title level="h1" %}
   <p class="lede">{{ sec.blurb }}</p>

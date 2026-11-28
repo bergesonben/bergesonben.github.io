@@ -1,12 +1,18 @@
 {%- assign post = include.post -%}
+{%- assign venue = post -%}
+{%- if post.restaurant %}{% assign venue = site.posts | where: "slug", post.restaurant | first %}{% endif -%}
+{%- assign place = post.place | default: venue.place -%}
+{%- assign cuisine = post.cuisine | default: venue.cuisine -%}
+{%- assign price = post.price | default: venue.price -%}
+{%- assign events = site.posts | where: "restaurant", post.slug -%}
 <article class="tile card" {% include data-attrs.html post=post %}>
   {%- if post.image %}
   <img class="card-img" src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: '' | escape }}" loading="lazy">
   {%- endif %}
   <div class="card-body">
-    <div class="card-label food mono">{{ post.place | join: ", " | upcase }}{% if post.cuisine %} · {{ post.cuisine | join: ", " | upcase }}{% endif %}{% if post.price %} · {{ post.price }}{% endif %}</div>
+    <div class="card-label food mono">{{ place | join: ", " | upcase }}{% if cuisine %} · {{ cuisine | join: ", " | upcase }}{% endif %}{% if price %} · {{ price }}{% endif %}</div>
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     {%- if post.verdict %}<p>{% include stars.html value=post.verdict %}</p>{% elsif post.description %}<p>{{ post.description }}</p>{% endif %}
-    <div class="card-foot mono">{{ post.date | date: "%b %-d, %Y" }}</div>
+    <div class="card-foot mono">{{ post.date | date: "%b %-d, %Y" }}{% if events.size > 0 %} · {{ events.size }} event{% if events.size > 1 %}s{% endif %}{% endif %}</div>
   </div>
 </article>
